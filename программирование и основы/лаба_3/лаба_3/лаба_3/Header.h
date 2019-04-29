@@ -11,7 +11,8 @@ using namespace::std;
 int* Generate(int n) {
 	int* ch = new int[n];
 	srand(GetTickCount());
-	for (long int i = 0; i <n; i++) {
+	register long int i;
+	for ( i = 0; i <n; i++) {
 		ch[i] = rand();
 	}
 	return ch;
@@ -28,12 +29,13 @@ void Print(int* ch) {
 void Shell(int* A) //сортировка Шелла
 {
 	long int n = (_msize(A) / sizeof(A[0]));
-	int  j;
+	register int  j;
 	int d = n;
 	d = d / 2;
 	while (d>0)
 	{
-		for (long int i = 0; i<n - d; i++)
+		register long int i;
+		for (i = 0; i<n - d; i++)
 		{
 			j = i;
 			while (j >= 0 && A[j]>A[j + d])
