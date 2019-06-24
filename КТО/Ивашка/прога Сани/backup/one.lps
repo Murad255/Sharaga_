@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="one.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="23" Y="19"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="6" HistoryIndex="5">
+      <Position1>
+        <Filename Value="one.pas"/>
+        <Caret Line="13" Column="48"/>
+      </Position1>
+      <Position2>
+        <Filename Value="one.pas"/>
+        <Caret Line="12" Column="7"/>
+      </Position2>
+      <Position3>
+        <Filename Value="one.pas"/>
+        <Caret Line="14" Column="53"/>
+      </Position3>
+      <Position4>
+        <Filename Value="one.pas"/>
+        <Caret Line="16" Column="22"/>
+      </Position4>
+      <Position5>
+        <Filename Value="one.pas"/>
+        <Caret Line="18"/>
+      </Position5>
+      <Position6>
+        <Filename Value="one.pas"/>
+        <Caret Line="17" Column="45"/>
+      </Position6>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
