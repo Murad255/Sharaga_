@@ -13,7 +13,8 @@ Figure::~Figure(void)
 
 double Figure::GetSquare()
 {
-	cout << "Common Figure can't have a square!" << endl; return 0;
+	cout << "Common Figure can't have a square!" << endl;
+	return 0;
 }
 
 void Figure::PrintName()
