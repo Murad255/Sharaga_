@@ -1,7 +1,6 @@
 #pragma once
 #include "Figure.h"
-class Rectangle :
-	public Figure
+class Rectangle :public Figure
 {
 public:
 

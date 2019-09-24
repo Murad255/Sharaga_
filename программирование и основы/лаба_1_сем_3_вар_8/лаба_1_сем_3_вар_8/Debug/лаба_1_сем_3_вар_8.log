@@ -1,2 +1,3 @@
-﻿  rhombus.cpp
-  лаба_1_сем_3_вар_8.vcxproj -> C:\Users\murad\source\repos\лаба_1_сем_3_вар_8\Debug\лаба_1_сем_3_вар_8.exe
+﻿  Source.cpp
+D:\Documents\GitHub\Sharaga_\программирование и основы\лаба_1_сем_3_вар_8\лаба_1_сем_3_вар_8\Source.cpp(9,1): warning C4326:  возвращаемый тип "main" должен быть "int", а не "void"
+  лаба_1_сем_3_вар_8.vcxproj -> D:\Documents\GitHub\Sharaga_\программирование и основы\лаба_1_сем_3_вар_8\Debug\лаба_1_сем_3_вар_8.exe

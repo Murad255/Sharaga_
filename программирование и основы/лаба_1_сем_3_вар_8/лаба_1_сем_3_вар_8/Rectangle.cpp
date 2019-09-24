@@ -16,7 +16,8 @@ Rectangle::~Rectangle()
 
 double Rectangle::GetSquare()
 {
-	cout << "Square of rectangle is " <<(a*b) << endl; return 0;
+	cout << "Square of rectangle is " <<(a*b) << endl; 
+	return (a * b);
 }
 
 void Rectangle::PrintName()
