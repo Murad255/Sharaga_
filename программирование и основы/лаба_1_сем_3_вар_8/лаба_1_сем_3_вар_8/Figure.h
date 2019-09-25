@@ -2,7 +2,8 @@
 class Figure {
 public:
 	Figure();
-	virtual ~Figure();
+	 ~Figure();
 	virtual double GetSquare();
-	void PrintName();
+	virtual void PrintName();
+	virtual double GetPerimetr();
 };

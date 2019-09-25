@@ -4,35 +4,60 @@
 #include "Figure.h"
 #include "Rectangle.h"
 
+int GetNum();
+using namespace std;
 void main()
 
 {
-	Figure* f;
-	Figure* f2;
-	Rectangle* r;
+	setlocale(0, "");
+	Figure* arr;
+	cout << "Сколько элементов вы хотите создать:?\t";
+	int figCount;
+	cin >> figCount;
+	arr = new Figure[figCount];
+	while (1)
+	{
 
-	f = new Figure();
-	r = new Rectangle();
+	}
 
-	r->a = 10;
-	r->b = 20;
-	f2 = r;
 
-	r->PrintName();
-	f->PrintName();
 
-	f2->PrintName();
-
-	f->GetSquare();
-	f2->GetSquare();
-
-	delete f;
-	delete f2;
 	_getch();
+}
+
+
+int GetNum()
+{
+	cout<<"	Нажмите цифру для произведения оперaции\n\
+			1 - создать фигуру \n \
+			2 - вывести параметры фигуры\n	";
+}
+	//Figure* f;
+	//Figure* f2;
+	//Rectangle* r;
+
+	//f = new Figure();
+	//r = new Rectangle();
+
+	//r->a = 10;
+	//r->b = 20;
+	//f2 = r;
+
+	//r->PrintName();
+	//f->PrintName();
+
+	//f2->PrintName();
+
+	//f->GetSquare();
+	//f2->GetSquare();
+
+	//delete f;
+	//delete f2;
+	//_getch();
 
 
 	//std::cout « "Hello World!\n";
-}
+
 //#include <iostream>
 //#include <conio.h>
 //#include "Figure.h"

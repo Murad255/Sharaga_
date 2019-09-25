@@ -10,5 +10,6 @@ public:
 	~Rectangle();
 
 	double GetSquare();
+	double GetPerimeter(); 
 	void PrintName();
 };

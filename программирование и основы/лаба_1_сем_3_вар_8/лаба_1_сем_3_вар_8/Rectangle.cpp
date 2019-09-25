@@ -23,4 +23,11 @@ double Rectangle::GetSquare()
 void Rectangle::PrintName()
 {
 	cout << "Rectangle" << endl;
+
+
+}
+double Rectangle::GetPerimeter()
+{
+	cout << "Rectangle's perimetr is " << (a + b)*2 << endl;
+	return (a + b) * 2;
 }

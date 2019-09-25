@@ -21,3 +21,9 @@ void Figure::PrintName()
 {
 	cout << "Abstract Figure" << endl;
 }
+
+double Figure::GetPerimetr()
+{
+	cout << "Common Figure can't have a perimetr!" << endl;
+	return 0;
+}
