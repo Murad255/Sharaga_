@@ -1,0 +1,9 @@
+﻿  Source.cpp
+c:\users\admin\documents\github\sharaga_\программирование и основы\лаба_1_сем_3_вар_8\laba_1_8\source.cpp(6): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\users\admin\documents\github\sharaga_\программирование и основы\лаба_1_сем_3_вар_8\laba_1_8\source.cpp(18): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+c:\users\admin\documents\github\sharaga_\программирование и основы\лаба_1_сем_3_вар_8\laba_1_8\source.cpp(67): error C2360: пропуск инициализации "rec" из-за метки "case"
+  c:\users\admin\documents\github\sharaga_\программирование и основы\лаба_1_сем_3_вар_8\laba_1_8\source.cpp(60): note:  см. объявление "rec"
+c:\users\admin\documents\github\sharaga_\программирование и основы\лаба_1_сем_3_вар_8\laba_1_8\source.cpp(74): error C2360: пропуск инициализации "rec" из-за метки "case"
+  c:\users\admin\documents\github\sharaga_\программирование и основы\лаба_1_сем_3_вар_8\laba_1_8\source.cpp(60): note:  см. объявление "rec"
+c:\users\admin\documents\github\sharaga_\программирование и основы\лаба_1_сем_3_вар_8\laba_1_8\source.cpp(79): error C2361: пропуск инициализации "rec" из-за метки "default"
+  c:\users\admin\documents\github\sharaga_\программирование и основы\лаба_1_сем_3_вар_8\laba_1_8\source.cpp(60): note:  см. объявление "rec"
