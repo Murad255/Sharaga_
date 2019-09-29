@@ -90,13 +90,16 @@ void main()
 					cout << "\nВы ввели неверное значение\n";
 					continue;
 				}
-				else if (b > figCount)
+				else if (b >= figCount)
 				{
-					cout << "\nЭтого элемента не существует\n";
+					cout << "\nЭтот элемент ещё не инициализирован\n";
 					continue;
 				}
-			arr[b]->PrintName();
-			PrintParam(arr[b]);
+				else {
+					arr[b]->PrintName();
+					PrintParam(arr[b]);
+				}
+			
 			break;
 		case 3:
 			for (int i = 0; i < figCount; i++)  delete arr[i];
