@@ -1,4 +1,1 @@
-﻿  Main.cpp
-e:\учёба\sharaga\программирование и основы\лаба_1_сем_3_вар_8\лаба_1_8\main.cpp(6): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-e:\учёба\sharaga\программирование и основы\лаба_1_сем_3_вар_8\лаба_1_8\main.cpp(15): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-  Лаба_1_8.vcxproj -> E:\учёба\Sharaga\программирование и основы\лаба_1_сем_3_вар_8\Debug\Лаба_1_8.exe
+﻿D:\PROGRAMS\VisualStudio\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(425,5): error MSB8040: Spectre-mitigated libraries are required for this project. Install them from the Visual Studio installer (Individual components tab) for any toolsets and architectures being used. Learn more: https://aka.ms/Ofhn4c

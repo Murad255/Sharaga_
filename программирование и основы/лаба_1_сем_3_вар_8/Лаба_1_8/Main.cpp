@@ -8,15 +8,15 @@
 
 using namespace std;
 
-void putFigure(Figure**,int);
-void PrintParam(Figure*);
+void putFigure(Figure**,int);	//вставляет в определённую ячейку массива фигур новую фигуру 
+void PrintParam(Figure*);		//выводит параметр фигуры
 
 void main()
 {
 	setlocale(0, "");
 
 	cout << "Сколько элементов вы хотите создать:?\t";
-	int maxCount;
+	int maxCount;  //максимальное количество элементов в массиве(предел) 
 	cin >> maxCount;
 	Figure** arr = new Figure*[maxCount];
 	int figCount = 0;
@@ -52,7 +52,8 @@ void main()
 			{
 			case 1:
 
-				arr[figCount] = new Rectangle();
+				arr[figCount] = new Rectangle();	//ячейке массива (с типом Figure*) передаём \
+													адрес на созданный элемент Rectangle
 				cout << "\nВведите пременную а\t";
 				cin >> ((Rectangle*)arr[figCount])->a;
 				cout << "\nВведите пременную b\t";
@@ -79,19 +80,21 @@ void main()
 			figCount++;
 			break;
 		case 2:
-			cout << "Выберите элемент до " << maxCount << '\t';
+			cout << "Выберите элемент до " << figCount << '\t';
 			int b;
 			cin >> b;
-			if (b < 0 && b >= maxCount)
-			{
-				cout << "\nВы ввели неверное значение\n";
-				continue;
-			}
-			else if (b > figCount)
-			{
-				cout << "\nЭтого элемента не существует\n";
-				continue;
-			}
+			--b;
+				if (b < 0 && b >= maxCount)
+				{
+
+					cout << "\nВы ввели неверное значение\n";
+					continue;
+				}
+				else if (b > figCount)
+				{
+					cout << "\nЭтого элемента не существует\n";
+					continue;
+				}
 			arr[b]->PrintName();
 			PrintParam(arr[b]);
 			break;
