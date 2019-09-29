@@ -1,0 +1,7 @@
+﻿  Circle.cpp
+  Figure.cpp
+  Rectangle.cpp
+  Rhombus.cpp
+  Source.cpp
+e:\учёба\sharaga\программирование и основы\лаба_1_сем_3_вар_8\project2\source.cpp(28): fatal error C1083: Не удается открыть файл включение: Figure.h: No such file or directory,
+  Создание кода...
