@@ -1,5 +1,1 @@
-﻿  Main.cpp
-D:\Documents\GitHub\Sharaga_\программирование и основы\лаба_1_сем_3_вар_8\Лаба_1_8\Main.cpp(6,10): warning C4067:  непредвиденные лексемы за директивой препроцессора, требуется newline
-D:\Documents\GitHub\Sharaga_\программирование и основы\лаба_1_сем_3_вар_8\Лаба_1_8\Main.cpp(15,1): warning C4326:  возвращаемый тип "main" должен быть "int", а не "void"
-D:\Documents\GitHub\Sharaga_\программирование и основы\лаба_1_сем_3_вар_8\Лаба_1_8\Main.cpp(56,1): warning C4010:  однострочный комментарий содержит знак объединения строк
-  Лаба_1_8.vcxproj -> D:\Documents\GitHub\Sharaga_\программирование и основы\лаба_1_сем_3_вар_8\Debug\Лаба_1_8.exe
+﻿D:\PROGRAMS\VisualStudio\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(425,5): error MSB8040: Spectre-mitigated libraries are required for this project. Install them from the Visual Studio installer (Individual components tab) for any toolsets and architectures being used. Learn more: https://aka.ms/Ofhn4c
