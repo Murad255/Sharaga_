@@ -1,0 +1,8 @@
+%Oscillation of two-mass sistem
+%Working file
+z=[];
+z0=[1 0];
+options=odeset('OutputFcn','odeplot','Outputsel',[1])
+[t,Z]=ode45('zashita1',[0 1],z0,options);
+pause
+clf,close;
