@@ -27,7 +27,7 @@ void Stack::Put(Element* e)
 	last->next = e;
 	last = e;
 	count++;
-	cout << "Element " << e->value << "added to queue" << endl;
+	cout << "Element " << e->value << " added to queue" << endl;
 }
 Element* Stack::Get()
 {

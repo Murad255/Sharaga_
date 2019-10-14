@@ -1,0 +1,10 @@
+% M-file approk
+for j=2:3
+    digits(9)
+    x=85:0.5:130;
+    p=polyfit(x,y,j)
+    f=polyval(p,x);
+    plot(x,y,'ob',x,f,'-g')
+pause
+end
+clf,close;

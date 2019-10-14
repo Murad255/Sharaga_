@@ -103,6 +103,7 @@ void main()
 			break;
 		case 3:
 			for (int i = 0; i < figCount; i++)  delete arr[i];
+			delete[] arr;
 			_getch();
 			return;
 		default:

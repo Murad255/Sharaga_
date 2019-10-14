@@ -11,7 +11,7 @@ public:
 	void Put(Element* e);//вывод элемента из очереди
 	Element* Get();		//вставка элемента в очередь
 	void Print();	//печать в консоль всех элементов
-	void Sum(); 
+	void Mult(); 
 };
 
 

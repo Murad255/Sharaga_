@@ -29,8 +29,9 @@ void Queue::Put(Element* e)
 	last->next = e;
 	last = e;
 	count++;
-	cout << "Element " << e->value << "added to queue" << endl;
+	cout << "Element " << e->value << " added to queue" << endl;
 }
+
 Element* Queue::Get()
 {
 	Element* e;
@@ -41,9 +42,10 @@ Element* Queue::Get()
 	first->prev = 0;
 	e->next = 0;
 	count--;
-	cout << "Element " << e->value << "removed from queue" << endl;
+	cout << "Element " << e->value << " removed from queue" << endl;
 	return e;
 }
+
 void Queue::Print()
 {
 	if (count < 1)
@@ -61,23 +63,20 @@ void Queue::Print()
 	cout << endl;
 }
 
-void Queue::Sum(){
-	if (count < 1) return;
-
-	Element* e;
-	int sum=0,i=0;
-	int temp = 0;
-	e = first;
-	while (e != 0)
-	{
-		if (i++ != 3) {
-
-			sum += e->value;
-			e = e->next;
-			temp++;
-		}
-		else break;
+void Queue::Mult(){
+	if (count < 3) {
+		cout << "Error: count < 3 \n";
+		return;
 	}
 
-	if(temp>=3)cout <<"\nsum 3 elements:"<< sum << endl;
+	Element* e = first;
+	int mult =1;
+	
+	for (int i = 0; i < 3; i++)
+	{
+		mult*= e->value;
+		e = e->next;
+	}
+
+	cout <<"\nmult 3 elements:"<< mult << endl;
 }
