@@ -1,6 +1,6 @@
 #include <iostream>
 #include <conio.h>
-//#include <windows.h>
+#include <windows.h>
 #include "Figure.h"
 #include "Rectangle.h"
 #include "Rhombus.h";
@@ -40,6 +40,7 @@ void main()
 			}
 			
 /////////////putFigure////////////////////
+			system("cls");
 			cout << "	\nВыберите тип фигуры:\n\
 				1 - Прямоугольник\n\
 				2 - Ромб\n\
