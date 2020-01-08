@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>7.6 Контроль ориентации LIN, CIRC</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.language" content="ru">
+    <meta name="DC.title" content="Системное программное обеспечение KUKA 8.2">
+    <meta name="DC.creator" content="PS5">
+    <meta name="DC.subject" content="Статус: 26.07.2012 Версия: KSS 8.2 END V2 ru (PDF)">
+    <meta name="DC.description" content=" ">
+    <meta name="DC.publisher" content="KSS_V8.2">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <style type="text/css">
+      body {background-color:white; font-family:Tahoma;}
+	    td p {margin:0px;}
+	  </style>
+  </head>
+  <body style="margin:1px; padding:1px; overflow-x: hidden;">
+    <div id="idIntermediateDocument9" style="margin:0pt;padding:0pt;">
+      <div id="idPageSequence8">
+        <div>
+          <div id="idSection203">
+            <p id="sec-0-d504db05-9d3f-4442-b4ff-8c51a86b7481" style="page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:11pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0mm;margin-right:0mm;margin-top:1pt;margin-bottom:2pt;text-indent:0mm;">7.6        Контроль ориентации LIN, CIRC<a id="idx-_d0_ba_d0_be_d0_bd_d1_82_d1_80_d0_be_d0_bb_d1_8c_20_d0_be_d1_80_d0_b8_d0_b5_d0_bd_d1_82_d0_b0_d1_86_d0_b8_d0_b8_2c_20lin_2c_20circ"></a></p>
+            <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Описание</p>
+            <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">TCP может иметь в начальной и в конечной точке движения различные ориентации. Начальная ориентация может переходить в целевую ориентацию различными способами. При программировании движения CP должен быть выбран один из способов.</p>
+            <p style="margin-left:0mm;margin-right:0mm;margin-top:6pt;margin-bottom:6pt;page-break-after:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Контроль ориентации для движений LIN и CIRC осуществляется следующим образом:</p>
+            <div>
+              <table>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">В окне опций <span style="font-weight:bold;">Параметры движения</span></p>
+                    <p style="page-break-before:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"> (<span style="font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#EB6909;text-decoration:none;">&gt;&gt;&gt; </span><a href="idSection224.htm#sec-0-e07a30c0-aea0-4007-8d3d-b946a067d681">8.2.9 "Окно опций параметры перемещения (LIN, CIRC)"</a>)</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Движение LIN</p>
+            <table style="padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;border-collapse:collapse;margin-bottom:10pt;width:98%;">
+              <col width="40%">
+              <col width="60%">
+              <thead>
+                <tr>
+                  <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Контроль ориентации</p>
+                  </td>
+                  <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Описание</p>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><span style="font-weight:bold;">Постоянная ориентация</span></p>
+                  </td>
+                  <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Ориентация TCP во время движения остается постоянной.</p>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Для целевой точки запрограммированная ориентация игнорируется, и сохраняется ориентация начальной точки.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><span style="font-weight:bold;">Стандарт</span></p>
+                  </td>
+                  <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Ориентация TCP во время движения постоянно меняется.</p>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><span style="font-weight:bold;">Указание:</span> если в режиме <span style="font-weight:bold;">Стандартный</span> возникает сингулярность ручных осей, выбрать вместо этого <span style="font-weight:bold;">Hand PTP</span>.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><span style="font-weight:bold;">Hand PTP</span></p>
+                  </td>
+                  <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Ориентация TCP во время движения постоянно меняется. Это происходит из-за линейного перевода (осевое перемещение) углов ручной оси. </p>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><span style="font-weight:bold;">Указание:</span> применять режим <span style="font-weight:bold;">Hand PTP</span> в том случае, если в режиме <span style="font-weight:bold;">Стандартный</span> возникает сингулярность ручных осей. <br>Ориентация TCP во время движения постоянно меняется, однако несколько неравномерно. Поэтому <span style="font-weight:bold;">Hand PTP</span> не пригоден, если робот должен в точности следовать определенной траектории, например, при лазерной сварке.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table style="width:98%;">
+              <col width="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align:middle;background-color:#FFFFFF;border-color:#000000;border-width:1pt;border-style:solid;padding-top:2pt;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\66364f97-6b3a-4384-8fe6-15da0f226c52.gif" alt="66364f97-6b3a-4384-8fe6-15da0f226c52.gif" style="border-width:0.5pt;placement:para;alignment:left;margin:0pt;margin-right:2pt;float:left;">Если в режиме <span style="font-weight:bold;">Стандартный</span> возникает сингулярность ручных осей и в режиме <span style="font-weight:bold;">Ручной PTP</span> требуемая ориентация не выдерживается достаточно точно, рекомендуются следующие меры:</p>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">повторить обучение на начальную и/или целевую точку. При этом ориентацию следует настроить так, чтобы больше не возникала сингулярность ручных осей и можно было выполнить движение по данной траектории в режиме <span style="font-weight:bold;">Стандартный</span>.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+              <col width="100%">
+              <tbody>
+                <tr style="page-break-after:avoid;">
+                  <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                    <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\5406670e-8012-4d6d-bedf-6a2f7f9f35e8.gif" alt="5406670e-8012-4d6d-bedf-6a2f7f9f35e8.gif" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 7-7: <span style="font-weight:bold;">Постоянная ориентация</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+              <col width="100%">
+              <tbody>
+                <tr style="page-break-after:avoid;">
+                  <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                    <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\ba5d8990-8c05-4678-934b-e0bbda4a39ac.gif" alt="ba5d8990-8c05-4678-934b-e0bbda4a39ac.gif" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 7-8: <span style="font-weight:bold;">Стандартный</span> или <span style="font-weight:bold;">Рука PTP</span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Движение CIRC</p>
+            <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Для движений CIRC имеется такой же выбор возможностей контроля ориентации, что и для движений LIN.</p>
+            <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">При движениях CIRC система управления роботом учитывает только запрограммированную ориентацию целевой точки. Запрограммированная ориентация вспомогательной точки игнорируется.</p>
+          </div>
+          <div class="footnotes"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

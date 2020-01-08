@@ -1,0 +1,11 @@
+﻿D:\PROGRAMS\VisualStudio\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (laba_2_SherenKA.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Source.cpp
+E:\Google Диск\учёба_online\Программирование\laba_2_SherenKA — копия\laba_2_SherenKA\Queue.h(160,1): warning C4244: *=: преобразование "T" в "int", возможна потеря данных
+E:\Google Диск\учёба_online\Программирование\laba_2_SherenKA — копия\laba_2_SherenKA\Queue.h(160,1): warning C4244:         with
+E:\Google Диск\учёба_online\Программирование\laba_2_SherenKA — копия\laba_2_SherenKA\Queue.h(160,1): warning C4244:         [
+E:\Google Диск\учёба_online\Программирование\laba_2_SherenKA — копия\laba_2_SherenKA\Queue.h(160,1): warning C4244:             T=double
+E:\Google Диск\учёба_online\Программирование\laba_2_SherenKA — копия\laba_2_SherenKA\Queue.h(160,1): warning C4244:         ]
+E:\Google Диск\учёба_online\Программирование\laba_2_SherenKA — копия\laba_2_SherenKA\Queue.h(149): message : во время компиляции функции-члена класс шаблон "void Queue<double>::Mult(void)"
+E:\Google Диск\учёба_online\Программирование\laba_2_SherenKA — копия\laba_2_SherenKA\Source.cpp(39): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Queue<double>::Mult(void)"
+E:\Google Диск\учёба_online\Программирование\laba_2_SherenKA — копия\laba_2_SherenKA\Source.cpp(25): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Queue<double>"
+  laba_2_SherenKA.vcxproj -> E:\Google Диск\учёба_online\Программирование\laba_2_SherenKA — копия\Debug\шаблонная очередь с приоритетом.exe

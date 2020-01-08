@@ -1,0 +1,5 @@
+﻿  Complex.cpp
+  Source.cpp
+  Создание кода...
+C:\Users\Tablet\Google Диск\учёба_online\Программирование\сем_1\сем_1\Complex.cpp(107): warning C4715:  Complex::operator==: значение возвращается не при всех путях выполнения
+  сем_1.vcxproj -> C:\Users\Tablet\Google Диск\учёба_online\Программирование\сем_1\Debug\сем_1.exe

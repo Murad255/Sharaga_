@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>5.3 Перемещение робота без вышестоящей системы безопасности</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.language" content="ru">
+    <meta name="DC.title" content="Системное программное обеспечение KUKA 8.2">
+    <meta name="DC.creator" content="PS5">
+    <meta name="DC.subject" content="Статус: 26.07.2012 Версия: KSS 8.2 END V2 ru (PDF)">
+    <meta name="DC.description" content=" ">
+    <meta name="DC.publisher" content="KSS_V8.2">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <style type="text/css">
+      body {background-color:white; font-family:Tahoma;}
+	    td p {margin:0px;}
+	  </style>
+  </head>
+  <body style="margin:1px; padding:1px; overflow-x: hidden;">
+    <div id="idIntermediateDocument7" style="margin:0pt;padding:0pt;">
+      <div id="idPageSequence6">
+        <div>
+          <div id="idSection103">
+            <p id="sec-0-34858b31-08fc-48f5-a654-cc647dd749e7" style="page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:11pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0mm;margin-right:0mm;margin-top:1pt;margin-bottom:2pt;text-indent:0mm;">5.3        Перемещение робота без вышестоящей системы безопасности</p>
+            <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Описание</p>
+            <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Чтобы переместить робот без вышестоящей системы безопасности, следует включить режим пуска в эксплуатацию. После этого робот можно перемещать в режиме T1. Если используется SafeOperation, можно, кроме того, выполнять перемещение в режиме KRF.</p>
+            <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Если используется опция RoboTeam, то активация режима пуска в эксплуатацию и перемещение робота возможны только с локального планшета smartPAD.</p>
+            <table style="width:98%;">
+              <col width="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align:middle;background-color:#FFFFFF;border-color:#000000;border-width:1pt;border-style:solid;padding-top:2pt;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\50c735b6-0b2c-483c-9505-000cd9d7d50a.gif" alt="50c735b6-0b2c-483c-9505-000cd9d7d50a.gif" style="border-width:0.5pt;placement:para;alignment:left;margin:0pt;margin-right:2pt;float:left;">В режиме пуска в эксплуатацию отключаются все внешние защитные приспособления. Следует соблюдать указания по технике безопасности, относящиеся к режиму пуска в эксплуатацию.</p>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"> (<span style="font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#EB6909;text-decoration:none;">&gt;&gt;&gt; </span><a href="idSection44.htm#sec-0-d75297c6-2181-4f21-bf86-ef7c0f2db53e">3.8.3.1 "Режим ввода в эксплуатацию"</a>)</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">В следующих случаях система управления роботом завершает режим пуска в эксплуатацию автоматически:</p>
+            <div>
+              <table>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Если через 30 мин после активации не было выполнено ни одно действие по управлению. </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Если smartPAD переключается в пассивный режим или отсоединяется от системы управления роботом.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">В случае использования интерфейса PROFIsafe: если устанавливается соединение с вышестоящей системой безопасности.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">В случае использования интерфейса X11: не все входные сигналы продолжают сохранять состояние «логический ноль».</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">В режиме ввода в эксплуатацию выполняется переключение на следующую моделируемую схему расположения входов:</p>
+            <div>
+              <table>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">внешний сигнал аварийного останова не подается;</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">защитная дверь открыта;</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">безопасный останов 1 не затребован;</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">безопасный останов 2 не затребован;</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">безопасный рабочий останов не затребован;</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">только для VKR C4: E2 замкнут.</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Если используется система SafeOperation или SafeRangeMonitoring, то режим ввода в эксплуатацию влияет на дополнительные сигналы.</p>
+            <table style="width:98%;">
+              <col width="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align:middle;background-color:#FFFFFF;border-color:#000000;border-width:1pt;border-style:solid;padding-top:2pt;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\66364f97-6b3a-4384-8fe6-15da0f226c52.gif" alt="66364f97-6b3a-4384-8fe6-15da0f226c52.gif" style="border-width:0.5pt;placement:para;alignment:left;margin:0pt;margin-right:2pt;float:left;">Информация о воздействии режима ввода в эксплуатацию при использовании систем SafeOperation или SafeRangeMonitoring приведена в документации на систему <span style="font-weight:bold;">SafeOperation</span> или <span style="font-weight:bold;">SafeRangeMonitoring</span>.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Условие</p>
+            <div>
+              <table>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">В случае использования интерфейса PROFIsafe: отсутствие соединения с вышестоящей системой безопасности.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">В случае использования интерфейса X11: все входные сигналы имеют состояние «логический ноль».</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Выбран режим работы T1 или KRF.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Для VKR C4: через накопитель USB или интерфейс Retrofit не активированы никакие сигналы E2/E7.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Для RoboTeam: используется локальный планшет smartPAD.</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Порядок действий</p>
+            <div>
+              <table>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                  </td>
+                  <td>
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">В главном меню выбрать пункт <span style="font-weight:bold;">Ввод в эксплуатацию</span> &gt; <span style="font-weight:bold;">Сервисное обслуживание</span> &gt; <span style="font-weight:bold;">Режим пуска в эксплуатацию</span>.</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <table style="padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;border-collapse:collapse;margin-bottom:10pt;width:98%;">
+              <col width="50%">
+              <col width="50%">
+              <thead>
+                <tr>
+                  <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Меню</p>
+                  </td>
+                  <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Описание</p>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\bfcf3c68-d8c1-4bfd-8542-fa548786aadd.gif" alt="bfcf3c68-d8c1-4bfd-8542-fa548786aadd.gif" style="border-width:0.5pt;max-width:300pt;"></p>
+                  </td>
+                  <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Включен режим пуска в эксплуатацию. Касание этого пункта меню отключает этот режим.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\cacc3e47-16f7-46dc-be31-5b63f9a002e2.gif" alt="cacc3e47-16f7-46dc-be31-5b63f9a002e2.gif" style="border-width:0.5pt;max-width:300pt;"></p>
+                  </td>
+                  <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                    <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Режим пуска в эксплуатацию выключен. Касание этого пункта меню включает этот режим.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="footnotes"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

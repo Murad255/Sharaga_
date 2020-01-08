@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>5.7.6.3 Калибровка базы инструмента</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.language" content="ru">
+    <meta name="DC.title" content="Системное программное обеспечение KUKA 8.2">
+    <meta name="DC.creator" content="PS5">
+    <meta name="DC.subject" content="Статус: 26.07.2012 Версия: KSS 8.2 END V2 ru (PDF)">
+    <meta name="DC.description" content=" ">
+    <meta name="DC.publisher" content="KSS_V8.2">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <style type="text/css">
+      body {background-color:white; font-family:Tahoma;}
+	    td p {margin:0px;}
+	  </style>
+  </head>
+  <body style="margin:1px; padding:1px; overflow-x: hidden;">
+    <div id="idIntermediateDocument7" style="margin:0pt;padding:0pt;">
+      <div id="idPageSequence6">
+        <div>
+          <div id="idSection121">
+            <div id="idSection142">
+              <div id="idSection145">
+                <p id="sec-0-9ce922a0-28ae-41ca-9efa-8835283f86cd" style="page-break-after:avoid;widows:5;orphans:5;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0mm;margin-right:0mm;margin-top:1pt;margin-bottom:2pt;text-indent:0mm;">5.7.6.3        Калибровка базы инструмента<a id="idx-_d0_b1_d0_b0_d0_b7_d0_b0_20_d0_b8_d0_bd_d1_81_d1_82_d1_80_d1_83_d0_bc_d0_b5_d0_bd_d1_82_d0_b0_2c_20_d0_ba_d0_b0_d0_bb_d0_b8_d0_b1_d1_80_d0_be_d0_b2_d0_ba_d0_b0"></a></p>
+                <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Описание</p>
+                <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">При этой калибровке пользователь назначает определенную систему координат BASE для инструмента, который находится на кинематике. Эта система координат BASE соотносится с системой координат FLANGE кинематики. Таким образом, база является передвижной и перемещается точно так же, как кинематика.</p>
+                <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Калибровка базы не является обязательной. Если калибровка не выполнялась, базой считается система координат кинематики FLANGE.</p>
+                <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">При калибровке выполняется подвод с помощью TCP уже откалиброванного инструмента к исходной точке и двум следующим точкам нужной базы. Эти 3 точки определяют базу. Для одной кинематики можно откалибровать только одну базу.</p>
+                <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                  <col width="100%">
+                  <tbody>
+                    <tr style="page-break-after:avoid;">
+                      <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                        <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\56a9ba80-45ad-40e9-b64b-042432ee4147.jpg" alt="56a9ba80-45ad-40e9-b64b-042432ee4147.jpg" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 5-34: Принцип калибровки базы</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Условие</p>
+                <div>
+                  <table>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Машинные параметры кинематики установлены и загружены в систему управления роботом.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Уже откалиброванный инструмент смонтирован на установочном фланце.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Выполнена калибровка исходной точки внешней кинематики.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Известен номер внешней кинематики.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Выбран режим работы T1.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Порядок действий</p>
+                <div>
+                  <table>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">1.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">В главном меню выбрать пункт <span style="font-weight:bold;">Ввод в эксплуатацию</span> &gt; <span style="font-weight:bold;">Калибровка</span> &gt; <span style="font-weight:bold;">Внешняя кинематика</span> &gt; <span style="font-weight:bold;">Смещение</span>.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">2.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Ввести номер системы координат BASE, в качестве которой была сохранена исходная точка. На экране появится имя системы координат BASE.</p>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Нажать кнопку <span style="font-weight:bold;">Продолжить</span> для подтверждения.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">3.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Ввести номер внешней кинематики. На экране появится название внешней кинематики. </p>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Нажать кнопку <span style="font-weight:bold;">Продолжить</span> для подтверждения.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">4.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Ввести номер базового инструмента. Нажать кнопку <span style="font-weight:bold;">Продолжить</span> для подтверждения.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">5.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Посредством TCP подвести базу инструмента к отсчетной точке. Нажать кнопку <span style="font-weight:bold;">Калибровка</span> и кнопку <span style="font-weight:bold;">Продолжить</span> для подтверждения.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">6.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">С помощью ТСР выполнить подвод к точке на положительной оси Х базы инструмента. Нажать кнопку <span style="font-weight:bold;">Калибровка</span> и кнопку <span style="font-weight:bold;">Продолжить</span> для подтверждения.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">7.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">С помощью TCP на плоскости XY выполнить подвод к точке с положительным значением Y. Нажать кнопку <span style="font-weight:bold;">Калибровка</span> и кнопку <span style="font-weight:bold;">Продолжить</span> для подтверждения.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">8.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Нажать кнопку <span style="font-weight:bold;">Сохранить</span>.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footnotes"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

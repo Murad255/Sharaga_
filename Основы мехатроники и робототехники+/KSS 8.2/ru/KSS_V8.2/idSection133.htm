@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>5.7.3.1 Калибровка внешней ТСР</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.language" content="ru">
+    <meta name="DC.title" content="Системное программное обеспечение KUKA 8.2">
+    <meta name="DC.creator" content="PS5">
+    <meta name="DC.subject" content="Статус: 26.07.2012 Версия: KSS 8.2 END V2 ru (PDF)">
+    <meta name="DC.description" content=" ">
+    <meta name="DC.publisher" content="KSS_V8.2">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <style type="text/css">
+      body {background-color:white; font-family:Tahoma;}
+	    td p {margin:0px;}
+	  </style>
+  </head>
+  <body style="margin:1px; padding:1px; overflow-x: hidden;">
+    <div id="idIntermediateDocument7" style="margin:0pt;padding:0pt;">
+      <div id="idPageSequence6">
+        <div>
+          <div id="idSection121">
+            <div id="idSection132">
+              <div id="idSection133">
+                <p id="sec-0-b6f42761-2613-4fe7-a8a2-113d7c6ef46d" style="page-break-after:avoid;widows:5;orphans:5;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0mm;margin-right:0mm;margin-top:1pt;margin-bottom:2pt;text-indent:0mm;">5.7.3.1        Калибровка внешней ТСР<a id="idx-_d0_ba_d0_b0_d0_bb_d0_b8_d0_b1_d1_80_d0_be_d0_b2_d0_ba_d0_b0_2c_20_d0_b2_d0_bd_d0_b5_d1_88_d0_bd_d1_8f_d1_8f_20tcp"></a></p>
+                <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Описание</p>
+                <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Вначале пользователь сообщает системе управления роботом TCP стационарного инструмента. Для этого к TCP подводится откалиброванный инструмент.</p>
+                <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Затем системе управления роботом сообщается ориентация системы координат стационарного инструмента. Для этого пользователь устанавливает систему координат откалиброванного инструмента параллельно новой системе координат. Имеется 2 варианта:</p>
+                <div>
+                  <table>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">5D</span>: пользователь сообщает системе управления роботом направление удара инструмента. Направлением удара является по умолчанию ось X. Ориентация других осей задается системой и не доступна для воздействия пользователя.</p>
+                        <p style="page-break-before:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Система задает ориентацию других осей всегда одинаково. Если впоследствии снова понадобится выполнить калибровку инструмента, например, после столкновения, достаточно будет заново определить направление удара инструмента. Поворот вокруг направления удара не нужно принимать во внимание.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">6D</span>: пользователь сообщает системе управления роботом ориентацию всех 3 осей.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                  <col width="100%">
+                  <tbody>
+                    <tr style="page-break-after:avoid;">
+                      <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                        <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\ee603813-6402-4d47-87f3-5d8d6b4b5fba.jpg" alt="ee603813-6402-4d47-87f3-5d8d6b4b5fba.jpg" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 5-27: Подвод к внешней TCP</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                  <col width="100%">
+                  <tbody>
+                    <tr style="page-break-after:avoid;">
+                      <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                        <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\2ad0e57b-2301-46d0-8c52-021c7cc3f8ce.jpg" alt="2ad0e57b-2301-46d0-8c52-021c7cc3f8ce.jpg" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 5-28: Параллельная ориентация систем координат</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Условие</p>
+                <div>
+                  <table>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Уже откалиброванный инструмент смонтирован на установочном фланце.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Выбран режим работы T1.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <table style="width:98%;">
+                  <col width="0">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:middle;background-color:#FFFFFF;border-color:#000000;border-width:1pt;border-style:solid;padding-top:2pt;">
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\66364f97-6b3a-4384-8fe6-15da0f226c52.gif" alt="66364f97-6b3a-4384-8fe6-15da0f226c52.gif" style="border-width:0.5pt;placement:para;alignment:left;margin:0pt;margin-right:2pt;float:left;">Соблюдать следующий порядок действий, если направление удара инструмента является направлением по умолчанию (= направление Х). Если направление удара изменено на Y или Z, необходимо соответственно изменить порядок действий. </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Порядок действий</p>
+                <div>
+                  <table>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">1.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">В главном меню выбрать пункт <span style="font-weight:bold;">Ввод в эксплуатацию</span> &gt; <span style="font-weight:bold;">Калибровка</span> &gt; <span style="font-weight:bold;">Стационарный инструмент</span> &gt; <span style="font-weight:bold;">Инструмент</span>.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">2.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Присвоить номер и имя стационарному инструменту. Нажать кнопку <span style="font-weight:bold;">Продолжить</span> для подтверждения.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">3.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Ввести номер уже откалиброванного инструмента. Нажать кнопку <span style="font-weight:bold;">Продолжить</span> для подтверждения.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">4.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">В поле <span style="font-weight:bold;">5D/6D</span> выбрать один из вариантов. Нажать кнопку <span style="font-weight:bold;">Продолжить</span> для подтверждения.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">5.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Посредством TCP уже откалиброванного инструмента выполнить подвод к TCP стационарного инструмента. Нажать кнопку <span style="font-weight:bold;">Калибровка</span>. В окне контрольного запроса нажать кнопку <span style="font-weight:bold;">Да</span>.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">6.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Если выбрано <span style="font-weight:bold;">5D</span>: </p>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">установить +X<span style="vertical-align:sub;font-size:80%;font-variant:normal;text-decoration:none;">BASE</span> параллельно Z<span style="vertical-align:sub;font-size:80%;font-variant:normal;text-decoration:none;">FLANGE</span>.</p>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">(Т.е. выставить установочный фланец параллельно направлению действия стационарного инструмента).</p>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Если выбрано <span style="font-weight:bold;">6D</span>: </p>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">выставить установочный фланец таким образом, чтобы его оси были параллельны осям стационарного инструмента:</p>
+                        <div>
+                          <table>
+                            <tr>
+                              <td style="vertical-align:top;">
+                                <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                              </td>
+                              <td>
+                                <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">+X<span style="vertical-align:sub;font-size:80%;font-variant:normal;text-decoration:none;">BASE</span> параллельно Z<span style="vertical-align:sub;font-size:80%;font-variant:normal;text-decoration:none;">FLANGE</span>;</p>
+                                <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">(Т.е. выставить установочный фланец параллельно направлению удара инструмента).</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="vertical-align:top;">
+                                <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                              </td>
+                              <td>
+                                <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">+Y<span style="vertical-align:sub;font-size:80%;font-variant:normal;text-decoration:none;">BASE</span> параллельно +Y<span style="vertical-align:sub;font-size:80%;font-variant:normal;text-decoration:none;">FLANGE</span>;</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="vertical-align:top;">
+                                <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                              </td>
+                              <td>
+                                <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">+Z<span style="vertical-align:sub;font-size:80%;font-variant:normal;text-decoration:none;">BASE</span> параллельно +X<span style="vertical-align:sub;font-size:80%;font-variant:normal;text-decoration:none;">FLANGE</span>.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">7.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Нажать кнопку <span style="font-weight:bold;">Калибровка</span>. В окне контрольного запроса нажать кнопку <span style="font-weight:bold;">Да</span>.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">8.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">При необходимости координаты и ориентация измеренных точек могут быть отображены в градусах и инкрементах (по отношению к системе координат FLANGE). Для этого нажать кнопку <span style="font-weight:bold;">Точки измерения</span>. Затем с помощью кнопки <span style="font-weight:bold;">Назад</span> вернуться к предыдущему изображению экрана.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">9.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Нажать кнопку <span style="font-weight:bold;">Сохранить</span>.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footnotes"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
