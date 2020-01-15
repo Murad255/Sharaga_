@@ -1,0 +1,6 @@
+function y=dima(x)
+%dima - grafik
+%one functions
+y(:,1)=sin(x)./x.*x.^2;
+
+

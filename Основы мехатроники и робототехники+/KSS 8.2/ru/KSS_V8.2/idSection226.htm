@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>8.3.1 Указания по программированию движений Spline</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.language" content="ru">
+    <meta name="DC.title" content="Системное программное обеспечение KUKA 8.2">
+    <meta name="DC.creator" content="PS5">
+    <meta name="DC.subject" content="Статус: 26.07.2012 Версия: KSS 8.2 END V2 ru (PDF)">
+    <meta name="DC.description" content=" ">
+    <meta name="DC.publisher" content="KSS_V8.2">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <style type="text/css">
+      body {background-color:white; font-family:Tahoma;}
+	    td p {margin:0px;}
+	  </style>
+  </head>
+  <body style="margin:1px; padding:1px; overflow-x: hidden;">
+    <div id="idIntermediateDocument10" style="margin:0pt;padding:0pt;">
+      <div id="idPageSequence9">
+        <div>
+          <div id="idSection225">
+            <div id="idSection226">
+              <p id="sec-0-01b283e2-cb46-423d-9229-fd133858f791" style="page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0mm;margin-right:0mm;margin-top:1pt;margin-bottom:2pt;text-indent:0mm;">8.3.1        Указания по программированию движений Spline</p>
+              <div>
+                <table>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Блок Spline должен охватывать только 1 процесс (например, 1 клеевой шов). Несколько процессов в одном блок Spline делают программу труднообозримой и затрудняют внесение изменений.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Если прямые и круговые сегменты заданы заготовкой, следует применять сегменты SLIN и SCIRC. (Исключение: для совсем коротких прямых применять сегменты SPL.) В остальных случаях применять сегменты SPL, особенно при коротких расстояниях между точками.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Порядок действий при определении траектории:</p>
+                      <div>
+                        <table>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;font-size:10pt;">a.</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Сначала заучить или рассчитать несколько характерных точек. Пример: точки, в которых кривая меняет направление.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;font-size:10pt;">b.</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Проверить траекторию. В тех местах, где нет достаточной точности, ввести дополнительные точки SPL.</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Избегать следования сегментов SLIN и/или SCIRC друг за другом, так как в результате этого скорость зачастую снижается до 0. </p>
+                      <p style="page-break-before:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Запрограммировать между сегментами SLIN и/или SCIRC сегменты SPL. Длина сегментов SPL должна быть по меньшей мере &gt; 0,5 мм. В зависимости от конкретного хода траектории могут также понадобиться намного более длинные сегменты SPL.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Избегать следования точек с одинаковыми декартовыми координатами друг за другом, так как в результате этого скорость зачастую снижается до 0.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Параметры (инструмент, база, скорость и т. д.), присвоенные блоку Spline, оказывают то же действие, что и до их присвоения блоку Spline. Однако присвоение их блоку Spline имеет то преимущество, что в случае выбора записи считываются правильные параметры.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Если в какой-либо точке не требуется точной ориентации, использовать опцию <span style="font-weight:bold;">Без ориентации</span>. Тогда система управления роботом рассчитает оптимальную ориентацию для данной точки, исходя из ориентаций окружающих точек. Тем же образом большие изменения ориентации между двумя точками оптимально распределяются на промежуточные точки.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Для рывка можно запрограммировать ограничение. Рывок – это изменение ускорения.</p>
+                      <p style="page-break-after:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Порядок действий:</p>
+                      <div>
+                        <table>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;font-size:10pt;">a.</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Сначала использовать значения по умолчанию.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;font-size:10pt;">b.</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Если на малых углах возникают отклонения: уменьшить значения.</p>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Если случается падение скорости или нужная скорость не достигается: повысить значения или увеличить ускорение.</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Если робот проходит по точкам, лежащим на одной рабочей поверхности, то при подводе к первой точке возможно столкновение с рабочей поверхностью.</p>
+                      <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                        <col width="100%">
+                        <tbody>
+                          <tr style="page-break-after:avoid;">
+                            <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                              <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-weight:normal;font-style:italic;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><img src="Images\2dcf8b4b-bb83-469a-9ff4-719c3ad07909.gif" alt="2dcf8b4b-bb83-469a-9ff4-719c3ad07909.gif" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:bold;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Рис. 8-7: Столкновение с рабочей поверхностью</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p style="page-break-before:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Во избежание столкновений следовать рекомендациям по переходам SLIN-SPL-SLIN.</p>
+                      <p style="page-break-before:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"> (<span style="font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#EB6909;text-decoration:none;">&gt;&gt;&gt; </span><a href="idSection210.htm#sec-0-59b7c61c-e7f2-49da-8fb2-1a1935dd280c">7.7.5.1 "Переход SLIN-SPL-SLIN"</a>)</p>
+                      <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                        <col width="100%">
+                        <tbody>
+                          <tr style="page-break-after:avoid;">
+                            <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                              <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-weight:normal;font-style:italic;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><img src="Images\80c2ab08-1ae7-4cb9-883b-b3f23df316a8.gif" alt="80c2ab08-1ae7-4cb9-883b-b3f23df316a8.gif" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:bold;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Рис. 8-8: Предотвращение столкновения с рабочей поверхностью</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="footnotes"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+Model {
+  Name			  "lasim"
+  Version		  2.09
+  SimParamPage		  Solver
+  SampleTimeColors	  off
+  InvariantConstants	  off
+  WideVectorLines	  on
+  ShowLineWidths	  off
+  PaperOrientation	  landscape
+  PaperType		  usletter
+  PaperUnits		  inches
+  StartTime		  "0.0"
+  StopTime		  "1.0"
+  Solver		  ode45
+  RelTol		  "1e-3"
+  AbsTol		  "1e-6"
+  Refine		  "1"
+  MaxStep		  "auto"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  RefineOutputTimes
+  OutputTimes		  "[2]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  LimitMaxRows		  off
+  MaxRows		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  warning
+  MinStepSizeMsg	  warning
+  UnconnectedInputMsg	  warning
+  UnconnectedOutputMsg	  warning
+  UnconnectedLineMsg	  warning
+  ConsistencyChecking	  off
+  ZeroCross		  on
+  SimulationMode	  normal
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_vc.tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  BlockDefaults {
+    Orientation		    right
+    ForegroundColor	    black
+    BackgroundColor	    white
+    DropShadow		    off
+    NamePlacement	    normal
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    normal
+    FontAngle		    normal
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    center
+    VerticalAlignment	    middle
+    ForegroundColor	    black
+    BackgroundColor	    white
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    normal
+    FontAngle		    normal
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    normal
+    FontAngle		    normal
+  }
+  System {
+    Name		    "lasim"
+    Location		    [174, 42, 990, 709]
+    Open		    on
+    ScreenColor		    white
+    Block {
+      BlockType		      Clock
+      Name		      "Закройте данный файл, щелкнув мышью на знаке "
+			      "\"Х\" в правом верхнем углу экрана. Затем "
+			      "используя меню Library: simulink - опцию "
+			      "File - опцию Open\nоткройте файл lasim1.mdl"
+      Position		      [385, 580, 405, 600]
+      Location		      [12, 31, 119, 76]
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Запустите  модель.  Для этого подведите курсор "
+			      "к опции  Simulation в меню файла и щелкни-\nте "
+			      "\"мышью\" ; в открывшемся окне выберите опцию "
+			      "Start. Затем дважды быстро щелкните \"мы- "
+			      "\nшью\"  на  поле  обозначения осциллографа. "
+			      "Появившийся график покажите преподавателю "
+			      "и\n зарисуйте в отчет.  После этого закройте "
+			      "окно графика,  используя символ  \"Х\"  в "
+			      "его правом\n верхнем углу. Откройте блок "
+			      "Sum, дважды  (быстро)  щелкнув \"мышью\" "
+			      "на его поле. Зафикси-\nруйте курсор на строке "
+			      "List of signes и замените правый + на знак  "
+			      "-. Вновь запустите модель\n и зарисуйте график "
+			      "сигнала  y(t) = 2sint - 3sin5t.\n\n"
+      Position		      [540, 465, 560, 485]
+      Location		      [12, 31, 119, 76]
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "ПОЛЕ НАБОРА"
+      Position		      [120, 345, 140, 365]
+      Location		      [12, 31, 119, 76]
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Перед вами меню библиотеки SIMULINK.  Левый "
+			      "верхний блок Sources позволяет выбрать тот "
+			      "или иной  внешний сигнал, например, гармо-\nниче"
+			      "ское воздействие.  Откройте блок.  Для этого "
+			      "дважды быстро щелкните  \"мышью\" на любой "
+			      "точке внутри очерченного квадрата блока.\nВ  "
+			      "открывшемся меню найдите  блок с именем Sine "
+			      "Wave. Это блок гармонических воздействий. "
+			      "Его, как и любой другой блок библиотеки,\nможно "
+			      "\"перенести\" в файл LASIM - в данном случае "
+			      "ваш рабочий файл - где его уже можно будет "
+			      "использовать. Подведите курсор к любой\nточке "
+			      "внутри квадрата блока и нажмите левую кнопку "
+			      "джойстика. Держа ее в нажатом состоянии, "
+			      "переместите курсор к свободному месту\nПОЛЯ "
+			      "НАБОРА и затем отпустите. Вы видите, что "
+			      "произошло. Сейчас перенесенный блок отмечен "
+			      "черными точками по вершинам квадрата.\n Чтобы "
+			      "снять отметку, отведите  курсор  в сторону "
+			      "и щелкните мышью один раз. Таким же образом "
+			      "можно \"захватывать\" и переносить блок \nвнутри"
+			      " окна файла  LASIM.  \n"
+      Position		      [380, 15, 400, 35]
+      Location		      [12, 31, 119, 76]
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Получите компьютерные осциллограммы сигнала  "
+			      "y(t) = 2sin2t + 3sin5t.  Для этого сначала\nзада"
+			      "йте амплитуду и частоту каждой гармоники "
+			      "следующим образом. Щелкните  \"мышью\" \nдважды "
+			      "в поле квадрата первого источника сигналов "
+			      "Sine Wave. В открывшемся меню под-\nведите "
+			      "курсор на белое поле строки Amplitude и нажмите "
+			      "на левую кнопку джойстика. Пос-\n ле появления "
+			      "вертикального штриха удалите стоящее число "
+			      "и вместо него наберите 2. За-\nтем аналогично "
+			      "задайте частоту сигнала в строке Frequency. "
+			      "Повторите эти действия с ис-\nточником сигналов "
+			      "Sine Wave 1."
+      Position		      [540, 345, 560, 365]
+      Location		      [12, 31, 119, 76]
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Проведите эти действия еще раз, так чтобы "
+			      "в окне рабочего файла образовалось два блока "
+			      "гармонических воздействий. Расположите их\nпо "
+			      "возможности рядом. Теперь закройте блок  "
+			      "Sources.  Для этого щелкните мышью на знаке "
+			      "\"Х\" в правом верхнем углу  выпавшего  меню\nLi"
+			      "brary: simulink/Sourc... После этого откройте "
+			      "блок  Linear и из него аналогичным способом "
+			      "переместите в рабочий файл блок суммиро-\nвания "
+			      "Sum. Теперь, предварительно закрыв блок Linear "
+			      "и открыв блок Sinks,  переместите в рабочий "
+			      "файл  виртуальный  осциллограф \nScope."
+      Position		      [380, 150, 400, 170]
+      Location		      [12, 31, 119, 76]
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Соедините  выход блока  Sine Wave  c одним "
+			      "входом, а выход блока Sine Wave 1 - с другим "
+			      "входом блока Sum.  Для  этого надо  подвести\nку"
+			      "рсор к выходу блока и после появления крестика "
+			      "нажать и удерживать левую кнопку джойстика. "
+			      "При этом появляется возможность про-\nводить "
+			      "стрелки на экране движением джойстика в соответс"
+			      "твующем  направлении. Если необходимо  сделать "
+			      "излом стрелки,  то в соот-\nветствующей точке "
+			      "отпустите кнопку джойстика. Тогда точка фиксируе"
+			      "тся , как узел. Затем аналогично ведите стрелку "
+			      "в перпендикуляр-\nном направлении. При контакте "
+			      "со входом принимающего блока отпустите кнопку "
+			      "джойстика. Указанным способом соедините выход "
+			      "бло-\nка -сумматора со входом блока-осциллографа"
+			      ". Получившееся покажите преподавателю."
+      Position		      [380, 240, 400, 260]
+      Location		      [12, 31, 119, 76]
+    }
+  }
+}

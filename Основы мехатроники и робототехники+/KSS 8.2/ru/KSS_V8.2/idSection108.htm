@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>5.5.3 Юстировка с помощью EMD</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.language" content="ru">
+    <meta name="DC.title" content="Системное программное обеспечение KUKA 8.2">
+    <meta name="DC.creator" content="PS5">
+    <meta name="DC.subject" content="Статус: 26.07.2012 Версия: KSS 8.2 END V2 ru (PDF)">
+    <meta name="DC.description" content=" ">
+    <meta name="DC.publisher" content="KSS_V8.2">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <style type="text/css">
+      body {background-color:white; font-family:Tahoma;}
+	    td p {margin:0px;}
+	  </style>
+  </head>
+  <body style="margin:1px; padding:1px; overflow-x: hidden;">
+    <div id="idIntermediateDocument7" style="margin:0pt;padding:0pt;">
+      <div id="idPageSequence6">
+        <div>
+          <div id="idSection105">
+            <div id="idSection108">
+              <p id="sec-0-f791f336-0950-45ef-8434-9f5106d3080a" style="page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0mm;margin-right:0mm;margin-top:1pt;margin-bottom:2pt;text-indent:0mm;">5.5.3        Юстировка с помощью EMD<a id="idx-emd"></a><a id="idx-_d1_8d_d0_bb_d0_b5_d0_ba_d1_82_d1_80_d0_be_d0_bd_d0_bd_d0_be_d0_b5_20_d0_bd_d0_b0_d0_bb_d0_b0_d0_b4_d0_be_d1_87_d0_bd_d0_be_d0_b5_20_d1_83_d1_81_d1_82_d1_80_d0_be_d0_b9_d1_81_d1_82_d0_b2_d0_be"></a></p>
+              <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Обзор</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">При юстировке с помощью EMD система управления роботом автоматически перемещает робот в положение юстировки. Вначале юстировка выполняется без нагрузки, а затем с нагрузкой. Имеется возможность сохранить несколько юстировок для различных нагрузок.</p>
+              <table style="padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="20%">
+                <col width="80%">
+                <thead>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Шаг</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Описание</p>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">1</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><span style="font-weight:bold;">Первичная юстировка</span></p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"> (<span style="font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#EB6909;text-decoration:none;">&gt;&gt;&gt; </span><a href="idSection109.htm#sec-0-c7754a1b-e3a3-42cd-9411-6f2dd7f10e03">5.5.3.1 "Выполнение первичной юстировки (с помощью EMD)"</a>)</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Первичная юстировка выполняется без нагрузки.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">2</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><span style="font-weight:bold;">Настройка смещения</span><a id="idx-_d1_81_d0_bc_d0_b5_d1_89_d0_b5_d0_bd_d0_b8_d0_b5"></a></p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"> (<span style="font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#EB6909;text-decoration:none;">&gt;&gt;&gt; </span><a href="idSection110.htm#sec-0-7a859636-5456-4133-924b-0521ce5f63c1">5.5.3.2 "Настройка смещения (с помощью EMD)"</a>)</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Настройка смещения выполняется с нагрузкой. Разность по отношению к первичной юстировке сохраняется в памяти.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">3</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">При необходимости: <span style="font-weight:bold;">проверка юстировки нагрузки со смещением</span></p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"> (<span style="font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#EB6909;text-decoration:none;">&gt;&gt;&gt; </span><a href="idSection111.htm#sec-0-c5dc53fb-576f-4dc0-b1bf-d70264eb04bb">5.5.3.3 "Проверка юстировки нагрузки со смещением (с помощью EMD)"</a>)</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Проверка юстировки нагрузки со смещением выполняется с нагрузкой, для которой уже была выполнена настройка смещения.</p>
+                      <p style="page-break-after:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Область применения:</p>
+                      <div>
+                        <table>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">проверка первичной юстировки;</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">восстановление первой юстировки, если она утеряна (например, после замены двигателя или столкновения). Так как настроенное смещение сохраняется и при утрате юстировки, система управления роботом может рассчитать первичную юстировку.<a id="idx-_d1_83_d1_82_d1_80_d0_b0_d1_82_d0_b0_20_d1_8e_d1_81_d1_82_d0_b8_d1_80_d0_be_d0_b2_d0_ba_d0_b8"></a></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="footnotes"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

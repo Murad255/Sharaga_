@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>8.6.12 Встроенный формуляр WAITFOR</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.language" content="ru">
+    <meta name="DC.title" content="Системное программное обеспечение KUKA 8.2">
+    <meta name="DC.creator" content="PS5">
+    <meta name="DC.subject" content="Статус: 26.07.2012 Версия: KSS 8.2 END V2 ru (PDF)">
+    <meta name="DC.description" content=" ">
+    <meta name="DC.publisher" content="KSS_V8.2">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <style type="text/css">
+      body {background-color:white; font-family:Tahoma;}
+	    td p {margin:0px;}
+	  </style>
+  </head>
+  <body style="margin:1px; padding:1px; overflow-x: hidden;">
+    <div id="idIntermediateDocument10" style="margin:0pt;padding:0pt;">
+      <div id="idPageSequence9">
+        <div>
+          <div id="idSection252">
+            <div id="idSection264">
+              <p id="sec-0-58e2bfcf-db4b-493c-a248-f595ce1dbbce" style="page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0mm;margin-right:0mm;margin-top:1pt;margin-bottom:2pt;text-indent:0mm;">8.6.12        Встроенный формуляр WAITFOR</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Данная команда устанавливает зависимую от сигнала функцию ожидания.</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">При необходимости могут быть логически связаны несколько сигналов (максимум 12). Если добавляется создание связи, то во встроенном формуляре добавляются поля для дополнительных сигналов и для других связей.</p>
+              <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="100%">
+                <tbody>
+                  <tr style="page-break-after:avoid;">
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\7577541b-0e3a-4ef0-8e2e-c0558363191c.gif" alt="7577541b-0e3a-4ef0-8e2e-c0558363191c.gif" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 8-28: Встроенный формуляр WAITFOR</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table style="padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="11.111%">
+                <col width="88.889%">
+                <thead>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Поз.</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Описание</p>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">1</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Добавить внешнюю связь. Оператор находится между заключенными в скобки выражениями.</p>
+                      <div>
+                        <table>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">AND</span></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">OR</span></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">EXOR</span></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Добавить NOT.</p>
+                      <div>
+                        <table>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">NOT</span></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">[пусто]</span></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Ввести нужный оператор с помощью соответствующей невидимой кнопки.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">2</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Добавить внутреннюю связь. Оператор находится внутри заключенного в скобки выражения.</p>
+                      <div>
+                        <table>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">AND</span></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">OR</span></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">EXOR</span></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Добавить NOT.</p>
+                      <div>
+                        <table>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">NOT</span></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">[пусто]</span></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Ввести нужный оператор с помощью соответствующей невидимой кнопки.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">3</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Ожидаемый сигнал</p>
+                      <div>
+                        <table>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">IN</span></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">OUT</span></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">CYCFLAG</span></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">TIMER</span></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">FLAG</span></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">4</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Номер сигнала</p>
+                      <div>
+                        <table>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">1 … 4096</span></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">5</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Если у сигнала имеется имя, это имя отображается.</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Только для группы пользователей «Эксперты»:</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">нажатием на кнопку <span style="font-weight:bold;">Дл. текст</span> можно ввести имя. Имя задается свободно.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">6</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <div>
+                        <table>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">CONT</span>: обработка в предварительной процедуре</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">[пусто]</span>: обработка с остановом предварительной процедуры</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="footnotes"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

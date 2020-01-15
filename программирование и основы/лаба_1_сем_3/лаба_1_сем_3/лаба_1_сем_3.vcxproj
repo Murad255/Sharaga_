@@ -151,16 +151,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h" />
+    <ClInclude Include="..\..\лаба_1\лаба_1\ConsoleApplication1\Element.h" />
+    <ClInclude Include="..\..\лаба_1\лаба_1\ConsoleApplication1\Queue.h" />
+    <ClInclude Include="..\..\лаба_1\лаба_1\ConsoleApplication1\Stack.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="лаба_1_сем_3.cpp" />
+    <ClCompile Include="..\..\лаба_1\лаба_1\ConsoleApplication1\ConsoleApplication1.cpp" />
+    <ClCompile Include="..\..\лаба_1\лаба_1\ConsoleApplication1\Queue.cpp" />
+    <ClCompile Include="..\..\лаба_1\лаба_1\ConsoleApplication1\Stack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

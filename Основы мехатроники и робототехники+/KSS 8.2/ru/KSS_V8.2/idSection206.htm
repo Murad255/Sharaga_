@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>7.7.2 Выбор записи при движениях Spline</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.language" content="ru">
+    <meta name="DC.title" content="Системное программное обеспечение KUKA 8.2">
+    <meta name="DC.creator" content="PS5">
+    <meta name="DC.subject" content="Статус: 26.07.2012 Версия: KSS 8.2 END V2 ru (PDF)">
+    <meta name="DC.description" content=" ">
+    <meta name="DC.publisher" content="KSS_V8.2">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <style type="text/css">
+      body {background-color:white; font-family:Tahoma;}
+	    td p {margin:0px;}
+	  </style>
+  </head>
+  <body style="margin:1px; padding:1px; overflow-x: hidden;">
+    <div id="idIntermediateDocument9" style="margin:0pt;padding:0pt;">
+      <div id="idPageSequence8">
+        <div>
+          <div id="idSection204">
+            <div id="idSection206">
+              <p id="sec-0-3b072228-1c34-46a6-afe4-4cfa626a7f6b" style="page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0mm;margin-right:0mm;margin-top:1pt;margin-bottom:2pt;text-indent:0mm;">7.7.2        Выбор записи при движениях Spline</p>
+              <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Блок Spline</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Блок Spline планируется и выполняется системой управления роботом как 1 запись движений. Тем не менее, для сегментов Spline возможен выбор записи. Ход SAK выполняется как движение LIN. Об этом появляется сообщение, которое необходимо квитировать.</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:6pt;margin-bottom:6pt;page-break-after:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Если второй сегмент в блоке Spline является сегментом SPL, то в следующих случаях движение происходит по измененной траектории:</p>
+              <div>
+                <table>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Выбор записи по первому сегменту в блоке Spline</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Выбор записи по блоку Spline</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Выбор записи по строке, предшествующей блоку Spline, если в ней не содержится команд движения и до блока Spline не поступает команда движения</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Если после хода SAK нажать клавишу пуска, появляется сообщение об изменении траектории, которое необходимо квитировать.</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;"><span style="font-weight:bold;">Пример:</span></p>
+              <table style="margin-bottom:10pt;border-color:#EB6909;border-style:solid;border-width:0.3pt;width:98%;">
+                <col width="*">
+                <tbody>
+                  <tr>
+                    <td style="background-color:#DFDFDF;margin:0pt;padding:1pt;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Courier New;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">1  PTP P0
+<br>2  SPLINE
+<br>3   SPL P1
+<br>4   SPL P2
+<br>5   SPL P3
+<br>6   SPL P4
+<br>7   SCIRC P5, P6
+<br>8   SPL P7
+<br>9   SLIN P8
+<br>10 ENDSPLINE</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table style="padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="14.286%">
+                <col width="85.714%">
+                <thead>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Строка</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Описание</p>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">2</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Начало блока Spline</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">3 … 9</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Сегменты Spline</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">10</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Конец блока Spline</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="100%">
+                <tbody>
+                  <tr style="page-break-after:avoid;">
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\3f2f197a-e58d-4166-b3e6-d1e993763e31.gif" alt="3f2f197a-e58d-4166-b3e6-d1e993763e31.gif" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 7-14: Пример: измененная траектория при выборе записи Р1</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">SCIRC</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">При выборе записи по команде SCIRC, для которой запрограммирован угол круга, подвод в целевую точку осуществляется вместе с углом круга при условии, что системе управления роботом известна начальная точка. Если это невозможно, осуществляется подвод в запрограммированную целевую точку. В данном случае появляется сообщение о том, что угол круга не учитывается.</p>
+              <table style="padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="50%">
+                <col width="50%">
+                <thead>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Позиция/вид команды SCIRC</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Целевая точка при выборе записи</p>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Сегмент SCIRC является первым сегментом в блоке Spline</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Угол круга не учитывается</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Другие сегменты SCIRC в блоке Spline</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Угол круга учитывается</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Отдельные движения SCIRC</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Угол круга не учитывается</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="footnotes"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>8.6.14 Встроенный формуляр SYN OUT, опция START/END</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.language" content="ru">
+    <meta name="DC.title" content="Системное программное обеспечение KUKA 8.2">
+    <meta name="DC.creator" content="PS5">
+    <meta name="DC.subject" content="Статус: 26.07.2012 Версия: KSS 8.2 END V2 ru (PDF)">
+    <meta name="DC.description" content=" ">
+    <meta name="DC.publisher" content="KSS_V8.2">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <style type="text/css">
+      body {background-color:white; font-family:Tahoma;}
+	    td p {margin:0px;}
+	  </style>
+  </head>
+  <body style="margin:1px; padding:1px; overflow-x: hidden;">
+    <div id="idIntermediateDocument10" style="margin:0pt;padding:0pt;">
+      <div id="idPageSequence9">
+        <div>
+          <div id="idSection252">
+            <div id="idSection266">
+              <p id="sec-0-49e059f0-2cfe-4b7e-9a55-adebef373a40" style="page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0mm;margin-right:0mm;margin-top:1pt;margin-bottom:2pt;text-indent:0mm;">8.6.14        Встроенный формуляр SYN OUT, опция START/END</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Операция переключения может быть запущена относительно точки запуска движения или целевой точки записи движения. Операция переключения может быть смещена по времени. Запись движения может представлять собой движение LIN, CIRC или PTP.</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:6pt;margin-bottom:6pt;page-break-after:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Примерные случаи применения:</p>
+              <div>
+                <table>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">закрывание или открывание сварочных клещей при точечной сварке;</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">включение или выключение сварочного тока при сварке по контуру;</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">подключение или отключение объемного тока при склеивании или герметизации.</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="100%">
+                <tbody>
+                  <tr style="page-break-after:avoid;">
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\c903af32-f66d-46df-8e26-8fd3b6fe0e5f.gif" alt="c903af32-f66d-46df-8e26-8fd3b6fe0e5f.gif" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 8-29: Встроенный формуляр SYN OUT, опция START/END</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table style="padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="11.111%">
+                <col width="88.889%">
+                <thead>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Поз.</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Описание</p>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">1</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Номер выхода</p>
+                      <div>
+                        <table>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">1 … 4096</span></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">2</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Если у выхода имеется имя, это имя отображается.</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Только для группы пользователей «Эксперты»:</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">нажатием на кнопку <span style="font-weight:bold;">Дл. текст</span> можно ввести имя. Имя задается свободно.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">3</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Состояние, в которое переключается выход</p>
+                      <div>
+                        <table>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">TRUE</span></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">FALSE</span></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">4</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="page-break-after:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Точка, в которой происходит переключение</p>
+                      <div>
+                        <table>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">START</span>: переключение происходит в точке запуска записи движения.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">END</span>: переключение происходит в целевой точке записи движения.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">PATH</span>:</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">5</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Временное смещение операции переключения</p>
+                      <div>
+                        <table>
+                          <tr>
+                            <td style="vertical-align:top;">
+                              <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                            </td>
+                            <td>
+                              <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">-1 000 – +1 000 мс</span></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><span style="font-weight:bold;">Указание:</span> указание времени является абсолютным. Точка переключения изменяется в зависимости от скорости робота.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Пример 1</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Точка запуска движения и целевая точка являются точками точного останова.</p>
+              <table style="margin-bottom:10pt;border-color:#EB6909;border-style:solid;border-width:0.3pt;width:98%;">
+                <col width="*">
+                <tbody>
+                  <tr>
+                    <td style="background-color:#DFDFDF;margin:0pt;padding:1pt;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Courier New;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">LIN P1 VEL=0.3m/s CPDAT1
+<br>LIN P2 VEL=0.3m/s CPDAT2
+<br>SYN OUT 1 '' State= TRUE at START Delay=20ms
+<br>SYN OUT 2 '' State= TRUE at END Delay=-20ms
+<br>LIN P3 VEL=0.3m/s CPDAT3
+<br>LIN P4 VEL=0.3m/s CPDAT4</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="100%">
+                <tbody>
+                  <tr style="page-break-after:avoid;">
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\5ae703a3-a451-4df8-9707-ef2ddc17c80a.jpg" alt="5ae703a3-a451-4df8-9707-ef2ddc17c80a.jpg" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 8-30</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">OUT 1 и OUT 2 приблизительно указывают позиции, в которых происходит переключение. Пунктирные линии указывают границы переключения.</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:6pt;margin-bottom:6pt;page-break-after:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Границы переключения:</p>
+              <div>
+                <table>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">START: точка переключения может быть задержана максимум до точки точного останова Р3 (+ мс);</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">END: точка переключения может быть смещена вперед максимум до точки точного останова Р2 (- мс).</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Если для временного смещения задаются более высокие значения, система управления автоматически переключается на границе переключения.</p>
+              <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Пример 2</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Начальная точка движения является точкой точного останова, целевая точка сглажена.</p>
+              <table style="margin-bottom:10pt;border-color:#EB6909;border-style:solid;border-width:0.3pt;width:98%;">
+                <col width="*">
+                <tbody>
+                  <tr>
+                    <td style="background-color:#DFDFDF;margin:0pt;padding:1pt;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Courier New;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">LIN P1 VEL=0.3m/s CPDAT1
+<br>LIN P2 VEL=0.3m/s CPDAT2
+<br>SYN OUT 1 '' State= TRUE at START Delay=20ms
+<br>SYN OUT 2 '' State= TRUE at END Delay=-20ms
+<br>LIN P3 CONT VEL=0.3m/s CPDAT3
+<br>LIN P4 VEL=0.3m/s CPDAT4</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="100%">
+                <tbody>
+                  <tr style="page-break-after:avoid;">
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\fdac0aa3-214d-48d5-82af-b2902933b70a.jpg" alt="fdac0aa3-214d-48d5-82af-b2902933b70a.jpg" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 8-31</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">OUT 1 и OUT 2 приблизительно указывают позиции, в которых происходит переключение. Пунктирные линии указывают границы переключения. M = середина зоны сглаживания.</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:6pt;margin-bottom:6pt;page-break-after:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Границы переключения:</p>
+              <div>
+                <table>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">START: точка переключения может быть задержана максимум до начала зоны сглаживания Р3 (+ мс).</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">END: точка переключения может быть смещена вперед максимум до начала зоны сглаживания Р3 (- мс).</p>
+                      <p style="page-break-before:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Точка переключения может быть задержана максимум до конца зоны сглаживания Р3 (+).</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Если для временного смещения задаются более высокие значения, система управления автоматически переключается на границе переключения.</p>
+              <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Пример 3</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Точка запуска движения и целевая точка сглажены.</p>
+              <table style="margin-bottom:10pt;border-color:#EB6909;border-style:solid;border-width:0.3pt;width:98%;">
+                <col width="*">
+                <tbody>
+                  <tr>
+                    <td style="background-color:#DFDFDF;margin:0pt;padding:1pt;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Courier New;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">LIN P1 VEL=0.3m/s CPDAT1
+<br>LIN P2 CONT VEL=0.3m/s CPDAT2
+<br>SYN OUT 1 '' State= TRUE at START Delay=20ms
+<br>SYN OUT 2 '' State= TRUE at END Delay=-20ms
+<br>LIN P3 CONT VEL=0.3m/s CPDAT3
+<br>LIN P4 VEL=0.3m/s CPDAT4</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="100%">
+                <tbody>
+                  <tr style="page-break-after:avoid;">
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\64266ce0-a6f5-45ef-953c-55c7f2616f07.jpg" alt="64266ce0-a6f5-45ef-953c-55c7f2616f07.jpg" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 8-32</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">OUT 1 и OUT 2 приблизительно указывают позиции, в которых происходит переключение. Пунктирные линии указывают границы переключения. M = середина зоны сглаживания.</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:6pt;margin-bottom:6pt;page-break-after:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Границы переключения:</p>
+              <div>
+                <table>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">START: ближайшее возможное положение точки переключения – в конце зоны сглаживания Р2.</p>
+                      <p style="page-break-before:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Точка переключения может быть задержана максимум до начала зоны сглаживания Р3 (+ мс).</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">END: точка переключения может быть смещена вперед максимум до начала зоны сглаживания Р3 (- мс).</p>
+                      <p style="page-break-before:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Точка переключения может быть задержана максимум до конца зоны сглаживания Р3 (+).</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Если для временного смещения задаются более высокие значения, система управления автоматически переключается на границе переключения.</p>
+            </div>
+          </div>
+          <div class="footnotes"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

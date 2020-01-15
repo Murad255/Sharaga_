@@ -1,0 +1,497 @@
+Model {
+  Name			  "ladpt"
+  Version		  2.09
+  SimParamPage		  Solver
+  SampleTimeColors	  off
+  InvariantConstants	  off
+  WideVectorLines	  off
+  ShowLineWidths	  off
+  PaperOrientation	  landscape
+  PaperType		  usletter
+  PaperUnits		  inches
+  StartTime		  "0.0"
+  StopTime		  "10.0"
+  Solver		  ode45
+  RelTol		  "1e-3"
+  AbsTol		  "1e-6"
+  Refine		  "1"
+  MaxStep		  "auto"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  RefineOutputTimes
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  LimitMaxRows		  off
+  MaxRows		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  warning
+  MinStepSizeMsg	  warning
+  UnconnectedInputMsg	  warning
+  UnconnectedOutputMsg	  warning
+  UnconnectedLineMsg	  warning
+  ConsistencyChecking	  off
+  ZeroCross		  on
+  SimulationMode	  normal
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_vc.tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  BlockDefaults {
+    Orientation		    right
+    ForegroundColor	    black
+    BackgroundColor	    white
+    DropShadow		    off
+    NamePlacement	    normal
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    normal
+    FontAngle		    normal
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    center
+    VerticalAlignment	    middle
+    ForegroundColor	    black
+    BackgroundColor	    white
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    normal
+    FontAngle		    normal
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    normal
+    FontAngle		    normal
+  }
+  System {
+    Name		    "ladpt"
+    Location		    [-13, 60, 1015, 708]
+    Open		    on
+    ScreenColor		    white
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [245, 802, 275, 833]
+      Inputs		      "+-"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum3"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [485, 797, 515, 828]
+      Inputs		      "-+"
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "В теории САУ электроприводом  данную модель "
+			      "принято представлять в эквивалентном виде:"
+      Position		      [445, 715, 465, 735]
+      Location		      [12, 31, 119, 76]
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "В электрическом звене постоянная времени "
+			      "Т составляет T=R/L. Оконечный интегратор "
+			      "введен для получения значенния угла поворота "
+			      "вала двигателя.\n\nЗадание: перерисуйте в "
+			      "отчет данные ( 2) модели. Объясните, как "
+			      "получена вторая модель из первой, в свою "
+			      "очередь полученной непосредственно по\nуравнения"
+			      "м ДПТ в нормальной форме Коши. Далее закройте "
+			      "данный файл и через главное меню Library: "
+			      "simulink, опцию File откройте файл labwrk"
+      Position		      [445, 925, 465, 945]
+      Location		      [12, 31, 119, 76]
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Внеш. момент         "
+      Position		      [280, 640, 300, 660]
+      Value		      "Mv"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Внешний момент             "
+      Position		      [435, 760, 455, 780]
+      Value		      "Mv"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Интегр."
+      Ports		      [1, 1, 0, 0, 0]
+      Position		      [660, 800, 690, 830]
+      ExternalReset	      none
+      InitialConditionSource      internal
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit      "inf"
+      LowerSaturationLimit      "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Интегратор1"
+      Ports		      [1, 1, 0, 0, 0]
+      Position		      [475, 630, 505, 660]
+      ExternalReset	      none
+      InitialConditionSource      internal
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit      "inf"
+      LowerSaturationLimit      "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Интегратор2"
+      Ports		      [1, 1, 0, 0, 0]
+      Position		      [475, 495, 505, 525]
+      ExternalReset	      none
+      InitialConditionSource      internal
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit      "inf"
+      LowerSaturationLimit      "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Источник питания           "
+      Position		      [185, 800, 205, 820]
+      Value		      "U"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Источник питания                             "
+      Position		      [280, 500, 300, 520]
+      Value		      "U"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Коэфф.1"
+      Position		      [330, 635, 360, 665]
+      Gain		      "c/K"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Коэфф.2     "
+      Position		      [330, 495, 360, 525]
+      Gain		      "p"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Коэфф.3"
+      Position		      [535, 455, 565, 485]
+      Orientation	      left
+      NamePlacement	      alternate
+      Gain		      "a"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Коэфф.4"
+      Position		      [540, 550, 570, 580]
+      Orientation	      left
+      NamePlacement	      alternate
+      Gain		      "c"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Коэфф.5"
+      Position		      [540, 590, 570, 620]
+      Orientation	      left
+      Gain		      "b"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Механич. звено"
+      Position		      [540, 800, 590, 830]
+      Numerator		      "[1]"
+      Denominator	      "[J 0]"
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Нетрудно видеть, что эти уравнения приводят "
+			      "к следующей модели"
+      Position		      [440, 390, 460, 410]
+      Location		      [12, 31, 119, 76]
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Пост. ЭДС"
+      Position		      [485, 875, 515, 905]
+      Orientation	      left
+      NamePlacement	      alternate
+      Gain		      "k"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Пост. момента"
+      Position		      [400, 805, 430, 835]
+      Gain		      "K"
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "При составлении дифференциальных уравнений "
+			      "ДПТ для электрической цепи используется второй "
+			      "закон Кирхгофа, согласно которому:\nU - E "
+			      "= IR + L( dI/dt )\nE = k w           \nk "
+			      "- коэффициент пропорциональности, называемый "
+			      "постоянной ЭДС двигателя, w - угловая скорость "
+			      "вращения вала двигателя.\nСоставляющая  IR "
+			      "характеризует падение напряжения на активном "
+			      "сопротивлении якорной цепи в соответствии "
+			      "с законом Ома, а L( dI/dt )\nотражает наличие "
+			      "ЭДС самоиндукции, возникающей в обмотке при "
+			      "изменении  тока якоря.  Дифференциальное "
+			      "уравнение  механической\nчасти двигателя "
+			      "составляется на основании второго закона "
+			      "Ньютона:\nMd - Mv = J( dw/dt )\nMd = K I  "
+			      "\nMd - момент двигателя,  K - коэффициент "
+			      "пропорциональности,  называемый постоянной "
+			      "момента двигателя,  Mv - момент внешних сил.\nНа"
+			      " основании данных уравнений, вводя обозначения "
+			      "I = x, w = y, 1/L=p, R/L=a, k/L=b, K/J=c, "
+			      "1/J=c/K, получаем систему дифференциальных\n "
+			      "уравнений двигателя в нормальной форме Коши:\ndx"
+			      "/dt = -ax - by +pU\ndy/dt = cx - (c/K) Mv\n"
+      Position		      [435, 165, 455, 185]
+      Location		      [12, 31, 119, 76]
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Распространенные в автоматизированном машиностро"
+			      "ении двигатели постоянного тока  (ДПТ)  преобраз"
+			      "уют электрическую энергию источника питания, "
+			      "к которому\n подключен двигатель, в энергию "
+			      "механического движения ротора и связанного "
+			      "с ним объекта управления.  Принцип работы  "
+			      "ДПТ основан на взаимодействии магнит-\nного "
+			      "поля, создаваемого, например, постоянными "
+			      "магнитами, и находящегося в этом поле проводника"
+			      " с током. Математическая модель ДПТ, как "
+			      "динамической сис-\nтемы, может быть построена "
+			      "на базе его достаточных уравнений. В них "
+			      "должны быть учтены как электрическая, так "
+			      "и механическая части двигателя. Электрическая\n "
+			      "якорная цепь содержит источник питания с "
+			      "напряжением постоянного тока U, активное "
+			      "сопротивление  R и индуктивность L якорной "
+			      "обмотки,  а также  противоЭДС \nдвигателя  "
+			      "Е.  Она возникает в соответствии с законами "
+			      "электромагнитной индукции, согласно которым "
+			      "в проводнике , движущимся в магнитном поле,  "
+			      "индуцируется\nэлектродвижущая сила (ЭДС). "
+			      "В ДПТ данная ЭДС направлена против внешнего "
+			      "напряжения U."
+      Position		      [435, 15, 455, 35]
+      Location		      [12, 31, 119, 76]
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Сумм.1"
+      Ports		      [3, 1, 0, 0, 0]
+      Position		      [400, 488, 430, 532]
+      Inputs		      "-+-"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Сумм.2"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [420, 627, 450, 658]
+      Inputs		      "++"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Name		      "Электрич. звено"
+      Position		      [305, 802, 360, 838]
+      Numerator		      "1/R"
+      Denominator	      "[T 1]  "
+    }
+    Line {
+      SrcBlock		      "Источник питания           "
+      SrcPort		      1
+      DstBlock		      "Sum2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      DstBlock		      "Электрич. звено"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Электрич. звено"
+      SrcPort		      1
+      DstBlock		      "Пост. момента"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Пост. момента"
+      SrcPort		      1
+      DstBlock		      "Sum3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Внешний момент             "
+      SrcPort		      1
+      Points		      [10, 0]
+      DstBlock		      "Sum3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Механич. звено"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	DstBlock		"Интегр."
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 75]
+	DstBlock		"Пост. ЭДС"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Пост. ЭДС"
+      SrcPort		      1
+      Points		      [-255, 0; 0, -65]
+      DstBlock		      "Sum2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Интегр."
+      SrcPort		      1
+      Points		      [30, 0]
+    }
+    Line {
+      SrcBlock		      "Внеш. момент         "
+      SrcPort		      1
+      DstBlock		      "Коэфф.1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Источник питания                             "
+      SrcPort		      1
+      DstBlock		      "Коэфф.2     "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Интегратор2"
+      SrcPort		      1
+      Points		      [85, 0]
+      Branch {
+	Points			[0, 55]
+	DstBlock		"Коэфф.4"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -40]
+	DstBlock		"Коэфф.3"
+	DstPort			1
+      }
+      Branch {
+	Points			[30, 0]
+      }
+    }
+    Line {
+      SrcBlock		      "Коэфф.4"
+      SrcPort		      1
+      Points		      [-150, 0; 0, 70]
+      DstBlock		      "Сумм.2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Коэфф.1"
+      SrcPort		      1
+      DstBlock		      "Сумм.2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Сумм.1"
+      SrcPort		      1
+      DstBlock		      "Интегратор2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Сумм.2"
+      SrcPort		      1
+      DstBlock		      "Интегратор1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Коэфф.5"
+      SrcPort		      1
+      Points		      [-160, 0; 0, -80]
+      DstBlock		      "Сумм.1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Коэфф.2     "
+      SrcPort		      1
+      DstBlock		      "Сумм.1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Коэфф.3"
+      SrcPort		      1
+      Points		      [-155, 0; 0, 25]
+      DstBlock		      "Сумм.1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Интегратор1"
+      SrcPort		      1
+      Points		      [85, 0]
+      Branch {
+	Points			[0, -40]
+	DstBlock		"Коэфф.5"
+	DstPort			1
+      }
+      Branch {
+	Points			[35, 0]
+      }
+    }
+    Line {
+      SrcBlock		      "Sum3"
+      SrcPort		      1
+      DstBlock		      "Механич. звено"
+      DstPort		      1
+    }
+    Annotation {
+      Position		      [629, 624]
+      FontSize		      12
+      Text		      "y"
+    }
+    Annotation {
+      Position		      [624, 489]
+      FontSize		      12
+      Text		      "x"
+    }
+  }
+}

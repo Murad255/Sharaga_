@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>5.7.5.2 Калибровка линейного блока</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.language" content="ru">
+    <meta name="DC.title" content="Системное программное обеспечение KUKA 8.2">
+    <meta name="DC.creator" content="PS5">
+    <meta name="DC.subject" content="Статус: 26.07.2012 Версия: KSS 8.2 END V2 ru (PDF)">
+    <meta name="DC.description" content=" ">
+    <meta name="DC.publisher" content="KSS_V8.2">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <style type="text/css">
+      body {background-color:white; font-family:Tahoma;}
+	    td p {margin:0px;}
+	  </style>
+  </head>
+  <body style="margin:1px; padding:1px; overflow-x: hidden;">
+    <div id="idIntermediateDocument7" style="margin:0pt;padding:0pt;">
+      <div id="idPageSequence6">
+        <div>
+          <div id="idSection121">
+            <div id="idSection138">
+              <div id="idSection140">
+                <p id="sec-0-9867b2a5-ebe5-44a9-9d74-fb29b9b3e2bc" style="page-break-after:avoid;widows:5;orphans:5;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0mm;margin-right:0mm;margin-top:1pt;margin-bottom:2pt;text-indent:0mm;">5.7.5.2        Калибровка линейного блока<a id="idx-_d0_ba_d0_b0_d0_bb_d0_b8_d0_b1_d1_80_d0_be_d0_b2_d0_ba_d0_b0_2c_20_d0_bb_d0_b8_d0_bd_d0_b5_d0_b9_d0_bd_d1_8b_d0_b9_20_d0_b1_d0_bb_d0_be_d0_ba"></a></p>
+                <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Описание</p>
+                <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">При калибровке трижды выполнить подвод к точке начала отсчета с помощью TCP откалиброванного инструмента.</p>
+                <div>
+                  <table>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Точку начала отсчета можно выбрать произвольно.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Положение робота на линейном блоке, из которого выполняется подвод к точке начала отсчета, во всех трех случаях должно быть разным. Эти три положения должны находиться на достаточном расстоянии друг от друга.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Корректировочные значения, которые определяются во время калибровки, записываются в системной переменной $ET<span style="font-family:Tahoma;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;">x</span>_TFLA3.</p>
+                <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Условие</p>
+                <div>
+                  <table>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Машинные параметры линейного блока установлены и загружены в систему управления роботом.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Уже откалиброванный инструмент смонтирован на установочном фланце.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Ни одна из программ не открыта или не выбрана.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Выбран режим работы T1.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Порядок действий</p>
+                <div>
+                  <table>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">1.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">В главном меню выбрать пункт <span style="font-weight:bold;">Ввод в эксплуатацию</span> &gt; <span style="font-weight:bold;">Калибровка</span> &gt; <span style="font-weight:bold;">Внешняя кинематика</span> &gt; <span style="font-weight:bold;">Линейный блок</span>.</p>
+                        <p style="font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Система управления роботом автоматически определит линейный блок и покажет следующие данные на экране:</p>
+                        <div>
+                          <table>
+                            <tr>
+                              <td style="vertical-align:top;">
+                                <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                              </td>
+                              <td>
+                                <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">Внешн. № системы кинематики</span>: номер внешней кинематики (1–6) ($EX_KIN);</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="vertical-align:top;">
+                                <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                              </td>
+                              <td>
+                                <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">Ось</span>: номер дополнительной оси (1–6) ($ET<span style="font-family:Tahoma;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;">x</span>_AX);</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="vertical-align:top;">
+                                <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                              </td>
+                              <td>
+                                <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;"><span style="font-weight:bold;">Имя внешн. кинематики</span> ($ET<span style="font-family:Tahoma;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;">x</span>_NAME).</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        <p style="font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">(Если системе управления роботом не удалось определить эти значения, например, из-за того, что конфигурация линейного блока еще не выполнялась, то калибровку продолжить невозможно).</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">2.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Переместить линейный блок с помощью клавиши перемещения «+».</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">3.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Указать направление перемещения линейного блока (положительное или отрицательное). Нажать кнопку <span style="font-weight:bold;">Продолжить</span> для подтверждения.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">4.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Посредством TCP подвести робот к соответствующей точке начала отсчета.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">5.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Нажать кнопку <span style="font-weight:bold;">Калибровка</span>.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">6.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Дважды повторить шаги 4 и 5; при этом каждый раз заранее перемещать линейный блок, чтобы подвести робот к точке начала отсчета из различных положений.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">7.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Нажать кнопку <span style="font-weight:bold;">Сохранить</span>. Значения измерения сохраняются в памяти.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top;">
+                        <p style="font-family:Tahoma;font-size:10pt;">8.</p>
+                      </td>
+                      <td>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">На экране появится запрос на то, следует ли изменить уже заученные позиции.</p>
+                        <div>
+                          <table>
+                            <tr>
+                              <td style="vertical-align:top;">
+                                <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                              </td>
+                              <td>
+                                <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Если перед калибровкой позиции еще не были заучены, то можно дать любой ответ на этот вопрос (<span style="font-weight:bold;">Да</span> или <span style="font-weight:bold;">Нет</span>).</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="vertical-align:top;">
+                                <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                              </td>
+                              <td>
+                                <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Если позиции были заучены перед калибровкой:</p>
+                                <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">если ответить <span style="font-weight:bold;">Да</span> на этот запрос, позиции с базой 0 будут автоматически изменены. Остальные позиции сохранятся без изменений!</p>
+                                <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Если ответить <span style="font-weight:bold;">Нет</span> на этот запрос, то позиции не будут изменены.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <table style="width:98%;">
+                  <col width="0">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:middle;background-color:#FFFFFF;border-color:#000000;border-width:1pt;border-style:solid;padding-top:2pt;">
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\0ca4588c-5a37-4c28-aa2d-bc2ffc2855ce.gif" alt="0ca4588c-5a37-4c28-aa2d-bc2ffc2855ce.gif" style="border-width:0.5pt;placement:para;alignment:left;margin:0pt;margin-right:2pt;float:left;">После калибровки линейного блока принять следующие меры безопасности:</p>
+                        <div>
+                          <table>
+                            <tr>
+                              <td style="vertical-align:top;">
+                                <p style="font-family:Tahoma;font-size:10pt;">1.</p>
+                              </td>
+                              <td>
+                                <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Проверить и при необходимости отрегулировать программные концевые выключатели линейного блока.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="vertical-align:top;">
+                                <p style="font-family:Tahoma;font-size:10pt;">2.</p>
+                              </td>
+                              <td>
+                                <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Проверить программы в режиме T1.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">В противном случае возможен материальный ущерб.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="footnotes"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

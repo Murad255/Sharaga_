@@ -1,0 +1,23 @@
+﻿D:\PROGRAMS\VisualStudio\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Сем_2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Source.cpp
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(15,17): warning C4305: =: усечение из "double" в "T"
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(15,17): warning C4305:         with
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(15,17): warning C4305:         [
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(15,17): warning C4305:             T=float
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(15,17): warning C4305:         ]
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(16,19): warning C4305: =: усечение из "double" в "T"
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(16,19): warning C4305:         with
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(16,19): warning C4305:         [
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(16,19): warning C4305:             T=float
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(16,19): warning C4305:         ]
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(17,19): warning C4305: =: усечение из "double" в "T"
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(17,19): warning C4305:         with
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(17,19): warning C4305:         [
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(17,19): warning C4305:             T=float
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(17,19): warning C4305:         ]
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(18,19): warning C4305: =: усечение из "double" в "T"
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(18,19): warning C4305:         with
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(18,19): warning C4305:         [
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(18,19): warning C4305:             T=float
+C:\Users\murad\source\repos\сем_2\сем_2\Source.cpp(18,19): warning C4305:         ]
+  Сем_2.vcxproj -> C:\Users\murad\source\repos\сем_2\Debug\Sem_2.exe

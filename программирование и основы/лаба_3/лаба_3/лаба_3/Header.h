@@ -11,7 +11,7 @@ using namespace::std;
 int* Generate(int n) {
 	int* ch = new int[n];
 	srand(GetTickCount());
-	register long int i;
+	register  int i;
 	for ( i = 0; i <n; i++) {
 		ch[i] = rand();
 	}
@@ -19,8 +19,8 @@ int* Generate(int n) {
 }
 
 void Print(int* ch) {
-	for (long int i = 0; i < (_msize(ch) / sizeof(ch[0])); i++) {
-		std::cout << "element " << i << ": " << ch[i] << '\n';
+	for (long int i = 0; i < (_msize(ch) / sizeof(int)); i++) {
+		std::cout << "element " << i << ":\t" << ch[i] << '\n';
 	}
 	return;
 }

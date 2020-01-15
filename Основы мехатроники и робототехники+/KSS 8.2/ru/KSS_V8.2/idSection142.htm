@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>5.7.6 Калибровка внешней кинематики</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.language" content="ru">
+    <meta name="DC.title" content="Системное программное обеспечение KUKA 8.2">
+    <meta name="DC.creator" content="PS5">
+    <meta name="DC.subject" content="Статус: 26.07.2012 Версия: KSS 8.2 END V2 ru (PDF)">
+    <meta name="DC.description" content=" ">
+    <meta name="DC.publisher" content="KSS_V8.2">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <style type="text/css">
+      body {background-color:white; font-family:Tahoma;}
+	    td p {margin:0px;}
+	  </style>
+  </head>
+  <body style="margin:1px; padding:1px; overflow-x: hidden;">
+    <div id="idIntermediateDocument7" style="margin:0pt;padding:0pt;">
+      <div id="idPageSequence6">
+        <div>
+          <div id="idSection121">
+            <div id="idSection142">
+              <p id="sec-0-abac45d8-f9ab-409d-9b68-6f6fd630af4c" style="page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0mm;margin-right:0mm;margin-top:1pt;margin-bottom:2pt;text-indent:0mm;">5.7.6        Калибровка внешней кинематики<a id="idx-_d0_ba_d0_b0_d0_bb_d0_b8_d0_b1_d1_80_d0_be_d0_b2_d0_ba_d0_b0_2c_20_d0_b2_d0_bd_d0_b5_d1_88_d0_bd_d1_8f_d1_8f_20_d0_ba_d0_b8_d0_bd_d0_b5_d0_bc_d0_b0_d1_82_d0_b8_d0_ba_d0_b0"></a><a id="idx-_d0_b2_d0_bd_d0_b5_d1_88_d0_bd_d1_8f_d1_8f_20_d0_ba_d0_b8_d0_bd_d0_b5_d0_bc_d0_b0_d1_82_d0_b8_d0_ba_d0_b0_2c_20_d0_ba_d0_b0_d0_bb_d0_b8_d0_b1_d1_80_d0_be_d0_b2_d0_ba_d0_b0"></a></p>
+              <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Описание</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Калибровка внешней кинематики требуется для того, чтобы оси кинематики синхронно и математически связанно перемещались вместе с осями робота. Внешней кинематикой может быть поворотный откидной стол или позиционер.<a id="idx-_d0_bf_d0_be_d0_b7_d0_b8_d1_86_d0_b8_d0_be_d0_bd_d0_b5_d1_80"></a></p>
+              <table style="width:98%;">
+                <col width="0">
+                <tbody>
+                  <tr>
+                    <td style="vertical-align:middle;background-color:#FFFFFF;border-color:#000000;border-width:1pt;border-style:solid;padding-top:2pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\66364f97-6b3a-4384-8fe6-15da0f226c52.gif" alt="66364f97-6b3a-4384-8fe6-15da0f226c52.gif" style="border-width:0.5pt;placement:para;alignment:left;margin:0pt;margin-right:2pt;float:left;">Для линейных блоков применять описанный здесь способ калибровки нельзя. Для них следует использовать специальный вид калибровки. </p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"> (<span style="font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#EB6909;text-decoration:none;">&gt;&gt;&gt; </span><a href="idSection138.htm#sec-0-17ff9340-f7b6-45a1-a826-574d234a37f1">5.7.5 "Линейный блок"</a>)</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Обзор</p>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Калибровка внешней кинематики состоит из 2 шагов:</p>
+              <table style="padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="16.667%">
+                <col width="83.333%">
+                <thead>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Шаг</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;background-color:#BFBFBF;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Описание</p>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">1</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Выполнить калибровку исходной точки внешней кинематики.</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"> (<span style="font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#EB6909;text-decoration:none;">&gt;&gt;&gt; </span><a href="idSection143.htm#sec-0-963a0745-81c6-4236-b5b7-dc0805f1bc00">5.7.6.1 "Калибровка исходной точки"</a>)</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Если данные калибровки уже известны, их можно ввести напрямую.</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"> (<span style="font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#EB6909;text-decoration:none;">&gt;&gt;&gt; </span><a href="idSection144.htm#sec-0-7b19e6f7-fd59-46c3-a73e-13f27f9ceb49">5.7.6.2 "Цифровой ввод исходной точки"</a>)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;" rowspan="2">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:center;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">2</p>
+                    </td>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Если на внешней кинематике находится заготовка: выполнить калибровку базы заготовки.</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"> (<span style="font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#EB6909;text-decoration:none;">&gt;&gt;&gt; </span><a href="idSection145.htm#sec-0-9ce922a0-28ae-41ca-9efa-8835283f86cd">5.7.6.3 "Калибровка базы инструмента"</a>)</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Если данные калибровки уже известны, их можно ввести напрямую.</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"> (<span style="font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#EB6909;text-decoration:none;">&gt;&gt;&gt; </span><a href="idSection146.htm#sec-0-5d31d415-8573-4535-9e2b-8cdd72bb5280">5.7.6.4 "Цифровой ввод базы инструмента"</a>)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border-collapse:collapse;padding:1pt;margin:0pt;border-color:#000000;border-style:solid;border-width:1pt;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Если на внешней кинематике установлен инструмент: выполнить калибровку внешнего инструмента.</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"> (<span style="font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#EB6909;text-decoration:none;">&gt;&gt;&gt; </span><a href="idSection147.htm#sec-0-484d9698-8c0c-4ace-9d70-11a6911833f8">5.7.6.5 "Калибровка внешнего инструмента"</a>)</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Если данные калибровки уже известны, их можно ввести напрямую.</p>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"> (<span style="font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#EB6909;text-decoration:none;">&gt;&gt;&gt; </span><a href="idSection148.htm#sec-0-b238d92a-d520-48aa-8151-1359dc524346">5.7.6.6 "Цифровой ввод внешнего инструмента"</a>)</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="footnotes"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

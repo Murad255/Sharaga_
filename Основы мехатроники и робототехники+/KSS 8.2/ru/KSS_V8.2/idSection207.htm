@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>7.7.3 Изменения в блоках Spline</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.language" content="ru">
+    <meta name="DC.title" content="Системное программное обеспечение KUKA 8.2">
+    <meta name="DC.creator" content="PS5">
+    <meta name="DC.subject" content="Статус: 26.07.2012 Версия: KSS 8.2 END V2 ru (PDF)">
+    <meta name="DC.description" content=" ">
+    <meta name="DC.publisher" content="KSS_V8.2">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <style type="text/css">
+      body {background-color:white; font-family:Tahoma;}
+	    td p {margin:0px;}
+	  </style>
+  </head>
+  <body style="margin:1px; padding:1px; overflow-x: hidden;">
+    <div id="idIntermediateDocument9" style="margin:0pt;padding:0pt;">
+      <div id="idPageSequence8">
+        <div>
+          <div id="idSection204">
+            <div id="idSection207">
+              <p id="sec-0-fe9d7fdd-607c-4a7f-890a-4b30660a7c42" style="page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0mm;margin-right:0mm;margin-top:1pt;margin-bottom:2pt;text-indent:0mm;">7.7.3        Изменения в блоках Spline</p>
+              <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Описание</p>
+              <div>
+                <table>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Изменение позиции точки:</p>
+                      <p style="page-break-before:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Если внутри блока Spline смещается точка, траектория изменяется максимум в 2 сегментах до этой точки и в 2 сегментах после нее.</p>
+                      <p style="page-break-before:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Малые сдвиги точек, как правило, не приводят к изменению траектории. Однако, если очень длинные и очень короткие сегменты следуют друг за другом, малые изменения могут иметь большие последствия, так как в этом случае касательные и кривые сильно изменяются.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Изменение типа сегмента:</p>
+                      <p style="page-break-before:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">Если сегмент SPL заменяется сегментом SLIN или наоборот, траектория изменяется в предшествующем и в последующем сегментах.</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Пример 1</p>
+              <table style="margin-bottom:10pt;border-color:#EB6909;border-style:solid;border-width:0.3pt;width:98%;">
+                <col width="*">
+                <tbody>
+                  <tr>
+                    <td style="background-color:#DFDFDF;margin:0pt;padding:1pt;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Courier New;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">PTP P0
+<br>SPLINE
+<br> SPL P1
+<br> SPL P2
+<br> SPL P3
+<br> SPL P4
+<br> SCIRC P5, P6
+<br> SPL P7
+<br> SLIN P8
+<br>ENDSPLINE</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="100%">
+                <tbody>
+                  <tr style="page-break-after:avoid;">
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\e7370601-abb6-4904-b373-ae32f9fa2713.gif" alt="e7370601-abb6-4904-b373-ae32f9fa2713.gif" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 7-15: Исходная траектория</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Смещается Р3. В связи с этим изменяется траектория в сегментах P1 - P2, P2 - P3 и P3 - P4. Сегмент P4 - P5 в этом случае не изменяется, так как он относится к SCIRC и определяет круговую траекторию.</p>
+              <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="100%">
+                <tbody>
+                  <tr style="page-break-after:avoid;">
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\8f60213e-d489-42a6-8787-5850d62f7571.gif" alt="8f60213e-d489-42a6-8787-5850d62f7571.gif" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 7-16: Точка была смещена</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">В исходной траектории изменен тип сегмента P2 - P3 с SPL на SLIN. Изменяется траектория в сегментах P1 - P2, P2 - P3 и P3 - P4.</p>
+              <table style="margin-bottom:10pt;border-color:#EB6909;border-style:solid;border-width:0.3pt;width:98%;">
+                <col width="*">
+                <tbody>
+                  <tr>
+                    <td style="background-color:#DFDFDF;margin:0pt;padding:1pt;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Courier New;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">PTP P0
+<br>SPLINE
+<br> SPL P1
+<br> SPL P2
+<br> SLIN P3
+<br> SPL P4
+<br> SCIRC P5, P6
+<br> SPL P7
+<br> SLIN P8
+<br>ENDSPLINE</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="100%">
+                <tbody>
+                  <tr style="page-break-after:avoid;">
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\e4a6fd67-7b44-4a7c-9de3-94ae7ec336a5.gif" alt="e4a6fd67-7b44-4a7c-9de3-94ae7ec336a5.gif" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 7-17: Изменен тип сегмента</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-left:0mm;margin-right:5mm;margin-top:10pt;margin-bottom:0pt;page-break-after:avoid;widows:5;orphans:5;line-height:14pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Пример 2</p>
+              <table style="margin-bottom:10pt;border-color:#EB6909;border-style:solid;border-width:0.3pt;width:98%;">
+                <col width="*">
+                <tbody>
+                  <tr>
+                    <td style="background-color:#DFDFDF;margin:0pt;padding:1pt;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Courier New;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">...
+<br>SPLINE
+<br> SPL {X 100, Y 0, ...}
+<br> SPL {X 102, Y 0}
+<br> SPL {X 104, Y 0}
+<br> SPL {X 204, Y 0}
+<br>ENDSPLINE</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="100%">
+                <tbody>
+                  <tr style="page-break-after:avoid;">
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\38f34324-c302-471e-9639-c6ea15636262.gif" alt="38f34324-c302-471e-9639-c6ea15636262.gif" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 7-18: Исходная траектория</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:3pt;margin-bottom:3pt;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Смещается Р3. В связи с этим изменяется траектория во всех показанных сегментах. Так как сегменты P2 - P3 и P3 - P4 являются очень короткими, а сегменты P1 - P2 и P4 - P5 очень длинными, небольшое смещение приводит к сильному изменению траектории.</p>
+              <table style="margin-bottom:10pt;border-color:#EB6909;border-style:solid;border-width:0.3pt;width:98%;">
+                <col width="*">
+                <tbody>
+                  <tr>
+                    <td style="background-color:#DFDFDF;margin:0pt;padding:1pt;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Courier New;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">...
+<br>SPLINE
+<br> SPL {X 100, Y 0, ...}
+<br> SPL {X 102, Y 1}
+<br> SPL {X 104, Y 0}
+<br> SPL {X 204, Y 0}
+<br>ENDSPLINE</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table style="border-collapse:collapse;margin-bottom:10pt;width:98%;">
+                <col width="100%">
+                <tbody>
+                  <tr style="page-break-after:avoid;">
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:10pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:italic;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;"><img src="Images\44a5e49b-b453-4d53-8664-d4777555c70a.gif" alt="44a5e49b-b453-4d53-8664-d4777555c70a.gif" style="border-width:0.5pt;alignment:left;max-width:300pt;"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-left:0pt;padding-top:3pt;padding-right:0pt;padding-bottom:3pt;background-color:transparent;">
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:bold;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;margin-left:0pt;margin-top:0pt;margin-right:0pt;margin-bottom:0pt;text-indent:0mm;">Рис. 7-19: Точка была смещена</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-left:0mm;margin-right:0mm;margin-top:6pt;margin-bottom:6pt;page-break-after:avoid;widows:2;orphans:2;line-height:12pt;text-align:left;font-family:Tahoma;font-weight:normal;font-style:normal;font-size:10pt;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;text-indent:0mm;">Способ устранения:</p>
+              <div>
+                <table>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">расстояние между точками распределить более равномерно</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align:top;">
+                      <p style="font-family:Tahoma;margin-top:-3pt;font-size:12pt;color:#EC6A0A;">■</p>
+                    </td>
+                    <td>
+                      <p style="widows:2;orphans:2;line-height:12pt;text-align:left;font-weight:normal;font-style:normal;font-variant:normal;font-stretch:normal;color:#000000;text-decoration:none;font-family:Tahoma;font-size:10pt;margin-bottom:1pt;margin-top:0pt;margin-left:0pt;margin-right:0pt;text-indent:0mm;">прямые (за исключением очень коротких прямых) программировать как сегменты SLIN</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="footnotes"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
