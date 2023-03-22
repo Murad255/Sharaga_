@@ -1,0 +1,11 @@
+D:\CLOUD\учёба_online\Сенсорные и управляющие системы роботов\Lab_1\Ses_Lab_1\Ses_Lab_1\bin\Debug\Ses_Lab_1.exe.config
+D:\CLOUD\учёба_online\Сенсорные и управляющие системы роботов\Lab_1\Ses_Lab_1\Ses_Lab_1\bin\Debug\Ses_Lab_1.exe
+D:\CLOUD\учёба_online\Сенсорные и управляющие системы роботов\Lab_1\Ses_Lab_1\Ses_Lab_1\bin\Debug\Ses_Lab_1.pdb
+D:\CLOUD\учёба_online\Сенсорные и управляющие системы роботов\Lab_1\Ses_Lab_1\Ses_Lab_1\obj\Debug\Ses_Lab_1.csproj.AssemblyReference.cache
+D:\CLOUD\учёба_online\Сенсорные и управляющие системы роботов\Lab_1\Ses_Lab_1\Ses_Lab_1\obj\Debug\Ses_Lab_1.csproj.SuggestedBindingRedirects.cache
+D:\CLOUD\учёба_online\Сенсорные и управляющие системы роботов\Lab_1\Ses_Lab_1\Ses_Lab_1\obj\Debug\Ses_Lab_1.Form1.resources
+D:\CLOUD\учёба_online\Сенсорные и управляющие системы роботов\Lab_1\Ses_Lab_1\Ses_Lab_1\obj\Debug\Ses_Lab_1.Properties.Resources.resources
+D:\CLOUD\учёба_online\Сенсорные и управляющие системы роботов\Lab_1\Ses_Lab_1\Ses_Lab_1\obj\Debug\Ses_Lab_1.csproj.GenerateResource.cache
+D:\CLOUD\учёба_online\Сенсорные и управляющие системы роботов\Lab_1\Ses_Lab_1\Ses_Lab_1\obj\Debug\Ses_Lab_1.csproj.CoreCompileInputs.cache
+D:\CLOUD\учёба_online\Сенсорные и управляющие системы роботов\Lab_1\Ses_Lab_1\Ses_Lab_1\obj\Debug\Ses_Lab_1.exe
+D:\CLOUD\учёба_online\Сенсорные и управляющие системы роботов\Lab_1\Ses_Lab_1\Ses_Lab_1\obj\Debug\Ses_Lab_1.pdb

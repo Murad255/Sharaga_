@@ -1,0 +1,120 @@
+<div>
+	<input type="checkbox" id="scales" name="scales">
+	<label for="scales">ввод занчений в градусах (пеервод в радианы)</label>
+</div>
+<div>
+	θi=
+	<input id="teti" />
+</div>
+
+<div>
+	φ i=
+	<input id="fii" />
+</div>
+<div>
+	li=
+	<input id="li" />
+</div>
+<div>
+	xg=
+	<input id="xg" />
+</div>
+<div>
+	yg=
+	<input id="yg" />
+</div>
+<button onclick="func()">рассчитать</button>
+
+
+<div>
+	xpi=
+	<p id="xpi"></p>
+</div>
+<div>
+	ypi=
+	<p id="ypi"></p>
+</div>
+
+<div>
+	xgi=
+	<p id="xgi"></p>
+</div>
+<div>
+	ygi=
+	<p id="ygi"></p>
+</div>
+
+<script>
+	var op; //выбранный оператор
+	function MultiplyMatrix(A, B) {
+		var rowsA = A.length, colsA = A[0].length,
+			rowsB = B.length, colsB = B[0].length,
+			C = [];
+
+		console.log("rowsA = " + rowsA.toString());
+		console.log("rowsB = " + rowsB.toString());
+		console.log("colsA = " + colsA.toString());
+		console.log("colsB = " + colsB.toString());
+
+
+		if (colsA != rowsB) {
+			console.log("colsA != rowsB");
+			return false;
+		}
+		for (var i = 0; i < rowsA; i++) C[i] = [];
+		for (var k = 0; k < colsB; k++) {
+			for (var i = 0; i < rowsA; i++) {
+				var t = 0;
+				for (var j = 0; j < rowsB; j++) t += A[i][j] * B[j][k];
+				C[i][k] = t;
+			}
+		}
+		console.log("C length = " + C.length.toString());
+
+		return C;
+	}
+
+
+	function func() {
+		var result;
+		var xpi;
+		var ypi;
+		var xgi;
+		var ygi;
+
+		var teti = Number(document.getElementById("teti").value);
+		var fii = Number(document.getElementById("fii").value);
+		var li = Number(document.getElementById("li").value);
+		var xg = Number(document.getElementById("xg").value);
+		var yg = Number(document.getElementById("yg").value);
+
+		var chec = document.getElementById("scales");
+		console.log("chec = " + chec.checked);
+ 
+		if (chec.checked) {
+			teti *= Math.PI / 180.0;
+			fii *= Math.PI / 180.0;
+		}
+		xpi = li * Math.cos(fii);
+		ypi = li * Math.sin(fii);
+
+		var M1 = [[Math.cos(teti), -Math.sin(teti), xg], [Math.sin(teti), Math.cos(teti), yg]];
+		var M2 = [[xpi], [ypi], [1]];
+		console.log("M1 = " + M1.toString());
+		console.log("M2 = " + M2.toString());
+
+		var M3 = MultiplyMatrix(M1, M2);
+		console.log("M3 = " + M3.toString());
+
+		xgi = M3[0];
+		ygi = M3[1];
+		console.log("xgi = " + M3[0].toString());
+		console.log("ygi = " + M3[1].toString());
+
+		document.getElementById("xpi").innerHTML = xpi;
+		document.getElementById("ypi").innerHTML = ypi;
+		document.getElementById("xgi").innerHTML = xgi;
+		document.getElementById("ygi").innerHTML = ygi;
+
+	}
+</script>
