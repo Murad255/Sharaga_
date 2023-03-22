@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CPTemplate>
+  <AppVersion>24</AppVersion>
+  <CPSheet>
+    <GroupBox Label="Окно группы" PropName="Окно группы2" DefaultState="Expanded">
+      <Control Label="Длина ремня" PropName="D4@Путь" ApplyTo="Config" Type="NumericCtrl" DefaultValue="330" />
+      <Control Label="Число зубьев" PropName="D1@Кривая1" ApplyTo="Config" Type="NumericCtrl" DefaultValue="110" />
+      <Control Label="Ширина ремня" PropName="D1@Бобышка-Вытянуть1" ApplyTo="Config" Type="ComboBox" UserDefineable="False">
+        <Data Path="" SourceType="List">
+          <Item>6</Item>
+          <Item>9</Item>
+          <Item>15</Item>
+        </Data>
+      </Control>
+    </GroupBox>
+  </CPSheet>
+</CPTemplate>

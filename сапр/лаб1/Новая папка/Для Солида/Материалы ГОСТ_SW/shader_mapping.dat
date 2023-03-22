@@ -1,0 +1,70 @@
+Aluminum1350Alloy,			Легированный алюминий 1350
+Aluminum2014Alloy,			Легированный алюминий 2014 
+Aluminum2018Alloy,			Легированный алюминий 2018 
+Aluminum2024Alloy,			Легированный алюминий 2024 
+Aluminum3003Alloy,			Легированный алюминий 3003 
+Aluminum6061Alloy,			Легированный алюминий 6061
+Aluminum7079Alloy,			Легированный алюминий 7079
+AluminumBrushed,			Матовый алюминий
+AluminumCircularBrushed,		Круговой матовый алюминий
+AluminumSatin,				Шлифованная сталь
+BrassPolished,				Полированная латунь
+BronzeAluminum,				Бронза алюминий
+BronzeCommercial,			Коммерческая бронза
+BronzeManganese,			Матовая бронза
+BronzeTinBearing,			Бронза
+CarbonFibre,				Углеродное волокно
+ceramicporcelain,			Фарфор
+ChromePolished,				Хром
+Cobalt,					Кобальт
+CopperPolished,				Медь
+CopperWrought,			Кованая медь
+Glass,					Стекло
+GlassFibre,				Стекляное волокно
+GoldDull,				Золото
+IronCast,				Литое железо
+IronDuctile,			Пластичное железо
+LeadPure,					Свинец
+AlloyMagnesium,				Легированный магний
+Molybdenum,				Молибден
+AlloyMonel400,				Монель 400
+NickelBrushed,				Матовый никель
+NickelPolished,				Никель
+PlasticAcrylic,				Пластик акрилик
+PlasticDimpled,				Пластик с ямочками 
+PlasticNylon,				Пластик нейлон
+PlasticShiny,				Блестящий пластик
+PlasticPerspex,				Пластик Perspex
+PlasticPTFE,				Пластик PTFE
+PlasticPolycarbonate,		Пластик поликарбонатный
+PlasticPolystyrene,			Пластик полистирол
+PlasticPVC,					Пластик PVC
+RubberSoft,				Мягкая резина
+Silicon,					Силикон
+SiliconDioxide,				Силикон двуокись
+silverpure,					Серебро
+StainlessSteel,				Нержавеющая сталь
+SteelAISI304,				Сталь AISI 304
+SteelAISI1020,				Сталь AISI 1020
+SteelCastCarbon,			Литая углеродистая сталь
+SteelCastStainless,			Литая нержавеющая сталь
+SteelGalvanised,			Оцинкованная сталь
+SteelPlainCarbon,			Простая углеродистая сталь
+SteelSatin,				Матовая сталь
+SteelWroughtStainless,			Кованная нержавеющая сталь
+texture,				текмтура
+thread,					резьба
+Titanium,				Платина
+Tungsten,				Вольфрам
+Vanadium,				Ванадий
+water,					Вода
+weldment,				сварка
+WoodBeech,				Бук
+WoodMahogany,				Красное дерево
+WoodMaple,				Клен
+WoodOak,				Дуб
+WoodPine,				Сосна
+WoodRedCedar,				Кедр
+WoodTeak,				Тик
+WoodVarnishedOak,			Лакированный дуб
+Zirconium,				Цирконий

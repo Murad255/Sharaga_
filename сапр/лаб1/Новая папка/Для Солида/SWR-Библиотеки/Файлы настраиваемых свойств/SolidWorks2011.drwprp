@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CPTemplate>
+  <CPSheet>
+    <GroupBox Label="Документ" PropName="Groupbox2" DefaultState="Expanded">
+      <Control Label="Обозначение" PropName="Обозначение" ApplyTo="Global" Type="TextBox" DefaultValue="" Mode="Text" />
+    </GroupBox>
+    <GroupBox Label="Согласование" PropName="Окно группы10" DefaultState="Expanded">
+      <Control Label="Разраб." PropName="п_Разраб" ApplyTo="Global" Type="ComboBox" UserDefineable="True">
+        <Data Table="Списки" Field="п_Разраб" Path="\\server\SWRlib\Файлы настраиваемых свойств\Properties.mdb" SourceType="MSAccess" />
+      </Control>
+      <Control Label="Пров." PropName="п_Пров" ApplyTo="Global" Type="ComboBox" UserDefineable="True">
+        <Data Table="Списки" Field="п_Пров" Path="\\server\SWRlib\Файлы настраиваемых свойств\Properties.mdb" SourceType="MSAccess" />
+      </Control>
+      <Control Label="Т.контр." PropName="п_Т_контр" ApplyTo="Global" Type="ComboBox" UserDefineable="True">
+        <Data Table="Списки" Field="п_Т_контр" Path="\\server\SWRlib\Файлы настраиваемых свойств\Properties.mdb" SourceType="MSAccess" />
+      </Control>
+      <Control Label="Н.контр." PropName="п_Н_контр" ApplyTo="Global" Type="ComboBox" UserDefineable="True">
+        <Data Table="Списки" Field="п_Н_контр" Path="\\server\SWRlib\Файлы настраиваемых свойств\Properties.mdb" SourceType="MSAccess" />
+      </Control>
+      <Control Label="Утв." PropName="п_Утв" ApplyTo="Global" Type="ComboBox" UserDefineable="True">
+        <Data Table="Списки" Field="п_Утв" Path="\\server\SWRlib\Файлы настраиваемых свойств\Properties.mdb" SourceType="MSAccess" />
+      </Control>
+    </GroupBox>
+    <GroupBox Label="Дополнительно" PropName="Окно группы17" DefaultState="Collapsed">
+      <Control Label="Первичное применение" PropName="Перв_Примен" ApplyTo="Global" Type="TextBox" DefaultValue="" Mode="Text" />
+      <Control Label="Литера" PropName="Лит" ApplyTo="Global" Type="ComboBox" UserDefineable="False">
+        <Data Table="Списки" Field="Лит" Path="\\server\SWRlib\Файлы настраиваемых свойств\Properties.mdb" SourceType="MSAccess" />
+      </Control>
+    </GroupBox>
+  </CPSheet>
+</CPTemplate>
